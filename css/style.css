@@ -234,7 +234,7 @@ This class is redundant
 .jumbotron.bghome {
     padding-top: 120px;
     //height: 60%;
-    background-color: #19227d;
+    background: #19227d url(../img/pattern.png) repeat;
 }
 
 .bgservices {
