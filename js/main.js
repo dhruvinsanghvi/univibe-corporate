@@ -6,11 +6,12 @@
       var x = $('.jumbotron').height();
       if ($(window).scrollTop() > x) {
           console.log('if');
-          $('.navbar-default').css('background-color', 'rgba(255,255,255,1)');
-          $('.navbar-default .navbar-nav > li > a').css('color', '#000000');
+          $('.logo').addClass('color');
+          $('.navbar-custom').css('background-color', 'rgba(255,255,255,1)');
+          $('.navbar-custom .navbar-nav > li > a').css('color', '#000000');
           $('.nav-tabs').css({
               //'top': 50, [Abbas]: Why duplicate??
-              'position': 'fixed',
+              //'position': 'fixed', Never mess around with this
               'z-index': 1000,
               'background-color': '#fff',
               'left': '50%',
@@ -20,8 +21,9 @@
 
       } else {
           console.log('else');
-          $('.navbar-default').css('background-color', 'transparent');
-          $('.navbar-default .navbar-nav > li > a').css('color', '#ffffff');
+          $('.logo').removeClass('color');
+          $('.navbar-custom').css('background-color', 'transparent');
+          $('.navbar-custom .navbar-nav > li > a').css('color', '#ffffff');
           $('.nav-tabs').css({
               //'top': 0, Removing duplicate top value
               'position': 'static',
@@ -41,6 +43,8 @@
 
       });
 
+      /* Add all JS logic in one single file to minimise loading time and script dependency on every page */
+      
       var scene = $('.scene');
       var parallax = new Parallax(scene);
 
