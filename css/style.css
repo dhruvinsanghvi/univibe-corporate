@@ -1,279 +1,378 @@
-html,body{
-margin: 0px;
-padding: 0px;	
-height:100%;
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
-.logo{
-	width: 130px;
+
+.white,
+h1.white {
+    color: #fff;
 }
-.navbar-default{
-	background-color:#fff;
-	border: none;
+
+
+/*=====================================
+=            Common Styles            =
+=====================================*/
+
+
+/**
+ *
+ * Include all the styles for the default HTML5 elements here
+ *
+ */
+
+h1{
+    font-weight: 700;
 }
+
+p.lead {
+    font-weight: 100;
+}
+
+h2,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+p,h3 {
+    font-weight: 300;
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+button,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea{
+	border-radius:2px;
+}
+
+a, a:focus, a:hover{
+	border:none;
+	outline: none;
+	border-bottom: none;
+}
+
+/*=====  End of Common Styles  ======*/
+
+.logo {
+    width: 180px;
+    height: 60px;
+    background-size: contain;
+    background-image: url('../img/logo/univibe_horizontal_white.png');
+    background-repeat: no-repeat;
+}
+
+.logo.color {
+    background-image: url('../img/logo/univibe_horizontal_color.png');
+}
+
+.navbar-custom {
+    //background-color: #19227d;
+    border: none;
+    margin-bottom: 0;
+}
+
 .navbar-brand {
     float: left;
-height: 0px;
+    height: 0px;
     padding: 0px 15px;
-    font-size: 0px; 
-     line-height:0px; 
+    font-size: 0px;
+    line-height: 0px;
 }
-.menu{
-	font-size: 14px;
-	font-weight: bold;
 
+.menu {
+    font-size: 14px;
+    font-weight: bold;
 }
-.menu-selected{
-	font-size: 14px;
-	font-weight: bold;
-}
-.navbar-default .navbar-nav > li > a{
-	color: #fff;
-}
-.theme-btn{
-	font-size: 14px;
-	font-weight: bold;
-	border: 1px solid #fff;
-	padding: 7px 5px 7px 5px !important;
-	background-color: transparent;
 
+.menu-selected {
+    font-size: 14px;
+    font-weight: bold;
 }
-.footer-heading{
-	font-size: 18px;
-	font-weight: bold;
-	color: rgba(17,17,17,1);
 
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
 }
-.footer-menu{
-	font-size: 14px;
-	font-weight: normal;
-	color: rgba(54,54,54,1);
-	outline: 0;
-	text-decoration: none;
-	line-height: 24px;
-}
-footer{
-	bottom: 0px;
-	width: 100%;
-	padding-bottom: 30px;
-}
-.globe-large{
-	position: absolute;
-	right: -102px;
-	top: -53px;
-}
-.globe-med{
-	position: absolute;
-	left:-96px;
-	top:-176px;
-}
-.globe-small{
-	position: absolute;
-	left: 372px;
-	top:60px;
-}
-.main-content{
-	text-align: center;
-	font-size: 16px !important;
-}
-.main-heading{
-font-size:36px;
-color: #fff;
-}
-.main-heading1{
- color: #fff;
 
+.theme-btn {
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius:4px;
+    padding: 7px 5px 7px 5px !important;
+    background-color: transparent;
 }
-.content-heading{
 
-	font-size: 18px;
-	font-weight: bold;
-	color: rgba(17,17,17,1);
+.footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(17, 17, 17, 1);
+}
 
+.footer-menu {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(54, 54, 54, 1);
+    outline: 0;
+    text-decoration: none;
+    line-height: 24px;
 }
-.footer-right{
-	float: right;
-	margin-top: 19px;
-}
-.footer-img{
-	width: 48px;
-	float: right;
-	clear:both;
-}
-.copyright{
-	color: rgba(54,54,54,1);
-	font-weight: light;
-	font-size: 14px;
-	line-height: 24px;
-	clear: both;
-}
-.full-width-btn{
-	width: 100%;
-}
-.form-elements{
-	border-left: none;
-	border-top: none;
-	border-right: none;
-	border-bottom: 2px dotted #d9d9d9;
-	text-decoration: none;
-	outline: 0;
-	box-shadow: none;
-	
-	border-radius: 0px;
-}
-@media (min-width: 768px){
-.modal-dialog {
-    width: 500px;
-    margin: 100px auto;
-}
-}
-.modal-title{
-	font-size: 26px;
-}
-.form-control:focus{
-box-shadow: none;
-border-bottom-color: #4d0063;
 
+.globe-large {
+    position: absolute;
+    right: -102px;
+    top: -53px;
 }
-.pt9{
-	padding-top: 7px;
+
+.globe-med {
+    position: absolute;
+    left: -96px;
+    top: -176px;
 }
-@media screen and (min-width: 768px){
-.jumbotron {
-    padding-top: 0px;
-    padding-bottom: 48px;
+
+.globe-small {
+    position: absolute;
+    left: 372px;
+    top: 60px;
 }
+
+.main-content {
+    text-align: center;
+    font-size: 16px !important;
 }
-.jumbotron{
-	padding-top: 0px;
-	
-	height: 60%;
+
+.main-heading {
+    //font-size: 36px; Never override sizes, bootstrap handles for various resolutions
+    color: #fff;
 }
-.bghome{
-	background-color: #000
+
+.main-heading1 {
+    color: #fff;
 }
-.bgservices{
-	background-color: #19227d;
-	overflow:hidden; 
+
+/*
+This class is redundant
+.content-heading {
+    //font-size: 18px;
+    //font-weight: bold;
+    color: rgba(17, 17, 17, 1); // Use hex where possible
+}*/
+
+.footer-right {
+    float: right;
+    margin-top: 19px;
 }
-.navbar-default{
-	background-color: transparent;
-	transition:all 0.5s;   
-    position: fixed;    
-    width: 100%;    
+
+.footer-img {
+    width: 48px;
+    float: right;
+    clear: both;
+}
+
+.copyright {
+    color: rgba(54, 54, 54, 1);
+    font-weight: light;
+    font-size: 14px;
+    line-height: 24px;
+    clear: both;
+}
+
+.full-width-btn {
+    width: 100%;
+}
+
+.form-elements {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px dotted #d9d9d9;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.modal-title {
+    font-size: 26px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom-color: #4d0063;
+}
+
+.pt9 {
+    padding-top: 7px;
+}
+
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        padding-top: 0px;
+        padding-bottom: 48px;
+    }
+    .modal-dialog {
+        width: 500px;
+        margin: 100px auto;
+    }
+    .home-icon {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.jumbotron.bghome {
+    padding-top: 120px;
+    //height: 60%;
+    background: #19227d url(../img/pattern.png) repeat;
+}
+
+.bgservices {
+    background-color: #19227d;
+    overflow: hidden;
+}
+
+.navbar-default {
+    background-color: transparent;
+    transition: all 0.5s;
+    //position: fixed; //Use bootstrap options and don't manually fix, you are using bootstrap for a reason
+    width: 100%;
     z-index: 1000;
     height: 60px;
     border-radius: 0px;
-  
 }
-.content-img{
-	width: 80px;
+
+.row {
+    margin-bottom: 100px;
 }
-.row{
-	margin-bottom: 100px;
+
+.scene {
+    height: 100%;
 }
-.scene{
-	height: 100%;
-}
+
+
 /* tab css */
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-	color: #452e8e;
-	background-color: transparent;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 2px solid #452e8e;
-	font-size: 22px;
-}
-.nav-tabs > li > a{
-	border: none;
-	border-radius: 0px;
-	color:#6f73b7;
-	font-size: 22px;
-}
-.nav-tabs > li > a:hover{
-background-color: transparent;
-color: #452e8e;
-border-bottom: 2px solid #452e8e;
-} 
-@media (min-width: 768px){
-.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus{
-	border-bottom-color:#452e8e;
 
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #452e8e;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #452e8e;
+    font-size: 22px;
 }
-} 
-.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
-border-bottom: 2px solid #452e8e;
-background-color: transparent;
-	border-top: none;
-	border-left: none;
-	border-right: none;
 
+.nav-tabs > li > a {
+    border: none;
+    border-radius: 0px;
+    color: #6f73b7;
+    font-size: 22px;
+}
 
+.nav-tabs > li > a:hover {
+    background-color: transparent;
+    color: #452e8e;
+    border-bottom: 2px solid #452e8e;
 }
-.tab-img{
-	width: 100%;
 
+@media (min-width: 768px) {
+    .nav-tabs.nav-justified > .active > a,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #452e8e;
+    }
 }
-.mgt20{
-	margin-top: 20px
+
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+    border-bottom: 2px solid #452e8e;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
-.team-img{
-	height: 251px;
-	background:url(../images/hitesh.jpg);
-	position: relative;
+
+.tab-img {
+    width: 100%;
+}
+
+.mgt20 {
+    margin-top: 20px
+}
+
+.team-img {
+    height: 251px;
+    background: url(../images/hitesh.jpg);
+    position: relative;
     text-align: center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-
-}
-@media screen and (max-width: 768px) and (min-width: 380px){
-	
-		.footer-right{
-			float: none;
-			text-align: center;
-
-		}
-		.footer-img{
-			float: none;
-		}
-        .footer-submenu{
-        	display: none;
-        }
-      .footer-heading{
-      	font-size: 16px;
-      }
-
-}
-.animatename{
-	background-color: rgba(0,0,0,0.8);
-
-	color: #fff;
-	height: 100%;
-	display: none;
-
-
-}	
-.mgt0{
-	margin-top: 0px;
-}
-.name{
-  padding-top: 110px;
-}
-.main{
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  text-align: center
-}
-.mgt30{
-	margin-top: 30px;
-}
-.thumb
-{
-	padding-left: 4px;
-	padding-right: 4px;
-	padding-top: 4px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 768px) and (min-width: 380px) {
+    .footer-right {
+        float: none;
+        text-align: center;
+    }
+    .footer-img {
+        float: none;
+    }
+    .footer-submenu {
+        display: none;
+    }
+    .footer-heading {
+        font-size: 16px;
+    }
+}
 
+.animatename {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: 100%;
+    display: none;
+}
+
+.mgt0 {
+    margin-top: 0px;
+}
+
+.name {
+    padding-top: 110px;
+}
+
+.main {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center
+}
+
+.mgt30 {
+    margin-top: 30px;
+}
+
+.thumb {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+}
+
+.home-icon {
+    width: 128px;
+    height: 128px;
+}
