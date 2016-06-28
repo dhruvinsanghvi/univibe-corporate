@@ -3,7 +3,8 @@
 
   $(window).scroll(function(a, b) {
       //console.log(a,$(window).scrollTop());
-      var x = $('.jumbotron').height();
+      //var x = $('.jumbotron').height();
+      var x = 56;
       if ($(window).scrollTop() > x) {
           console.log('if');
           $('.logo').addClass('color');
