@@ -1,6 +1,7 @@
 # Changelog
 
 ### Tuesday, 28 June 2016
+Following changes done by [Abbas S.] (https://github.com/abbasdawood)
 - Added header image and clients section images
 
 ### v 0.0.1 Monday, 27 June 2016
