@@ -2,6 +2,7 @@ html,body{
 margin: 0px;
 padding: 0px;	
 height:100%;
+position: relative;
 }
 .logo{
 	width: 130px;
@@ -275,5 +276,13 @@ background-color: transparent;
 	padding-right: 4px;
 	padding-top: 4px;
 }
-
+.scrolls{
+	position: relative;
+}
+#navtab{
+	width: 1170px;
+	z-index: 1000;
+	background-color: #fff;
+	top: 80px;
+}
 

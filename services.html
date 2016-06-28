@@ -12,7 +12,7 @@
     <link href="css/style.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body  data-spy="scroll" data-target="#tab" data-offset="60">
  
 
   <!-- main content goes here -->
@@ -96,12 +96,15 @@
       <div>
 
   <!-- Nav tabs -->
-        <ul class="nav nav-tabs nav-justified" role="tablist">
-           <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-           <li role="presentation" class=""><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <div class="row" data-spy="affix" data-offset-top="200" id="navtab">
+      <div class="col-md-12 scrolls">
+        <ul class="nav nav-tabs" role="tablist" id="tab">
+           <li role="presentation" class="active col-md-offset-4 col-md-2 text-center"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+           <li role="presentation" class="col-md-2 text-center"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
           
         </ul>
-
+      </div>
+    </div>  
   <!-- Tab panes -->
         <div class="tab-content">
            <div role="tabpanel" class="tab-pane active" id="home">
@@ -130,7 +133,32 @@
 
 
            </div>
-           <div role="tabpanel" class="tab-pane" id="profile">...</div>
+           <div role="tabpanel" class="tab-pane" id="profile">
+             <div class="row">
+                  <div class="col-md-4 col-xs-12 mgt20">
+                     <img src="images/contact.jpg" class="tab-img">
+                  </div>
+                  <div class="col-md-8 col-xs-12">
+                     <h2 class="content-heading">Our story</h2>
+                     <p >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                 </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                   <div class="col-md-8 col-xs-12">
+                      <h2 class="content-heading">Our partners</h2>
+                       <p >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>
+                   <div class="col-md-4 col-xs-12 mgt20">
+                       <img src="images/contact.jpg" class="tab-img">
+                    </div>
+                </div>
+
+
+
+
+           </div>
            
          </div>
 
