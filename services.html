@@ -10,12 +10,13 @@
     <!-- Bootstrap -->
     <!-- build:js app.full.min.css -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- /build -->
 </head>
 
-<body data-spy="scroll" data-target="#navscroll">
+<body data-spy="scroll" data-target=".navscroll" data-offset="200">
     <!-- main content goes here -->
    
        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -36,7 +37,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <li class="contactus"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
             <div class="navbar-inverse side-collapse in">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right mobile-nav">
                     <li><a href="#" class="menu-selected">Home</a></li>
                     <li><a href="#" class="menu">Services</a></li>
                     <li><a href="#" class="menu">Univibe+</a></li>
@@ -59,12 +60,14 @@
     </div>
     <!-- jumbotron ends hereeeeee .. -->
     <div class="container">
-            <div class="row" id="navscroll">
+            <div class="row">
+               <div class="col-md-12 col-xs-12 navscroll">
             <!-- Nav tabs -->
-                <ul class="nav nav-tabs col-md-12 col-xs-12" role="tablist" id="navtab">
+                <ul class="nav nav-tabs nav-tabscroll">
                    <li  class="active col-md-2 col-md-offset-4 col-xs-6 text-center"><a href="#institute">Institutes</a></li>
                    <li class="col-md-2 col-xs-6 text-center"><a href="#alumns">Alumns</a></li>
                 </ul>
+               </div>
             </div>
             <!-- Tab panes -->
                 <div id="institute">
@@ -228,7 +231,14 @@
             </div>
             <div class="col-md-6 col-xs-12">
                 <div class="footer-right">
-                    <img src="images/ulogo2.png" class="footer-img">
+                    <img src="img/logo/univibe_vertical_grayscale.png" class="footer-img">
+                    <div class="mobile-icons">
+                        <a href="" class="fa fa-facebook icon"></a>
+                        <a href="" class="fa fa-linkedin icon"></a>
+                        <a href="" class="fa fa-envelope icon"></a>
+
+                    </div>
+                  
                     <p class="copyright">Copyright &copy 2016, Univibe Network Pvt. Ltd.</p>
                 </div>
             </div>
@@ -273,6 +283,12 @@
     <!-- build:js app.full.min.js -->
     <script src="js/parallax.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+
+    </script>
 
     <!-- /build -->
 </body>

@@ -222,20 +222,7 @@ This class is redundant
     padding-top: 7px;
 }
 
-@media screen and (min-width: 768px) {
-    .jumbotron {
-        padding-top: 0px;
-        padding-bottom: 48px;
-    }
-    .modal-dialog {
-        width: 500px;
-        margin: 100px auto;
-    }
-    .home-icon {
-        width: 64px;
-        height: 64px;
-    }
-}
+
 
 .jumbotron.bghome {
     padding-top: 120px;
@@ -287,6 +274,10 @@ This class is redundant
     color: #6f73b7;
     font-size: 22px;
 }
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
 
 .nav-tabs > li > a:hover {
     background-color: transparent;
@@ -294,13 +285,7 @@ This class is redundant
     border-bottom: 2px solid #452e8e;
 }
 
-@media (min-width: 768px) {
-    .nav-tabs.nav-justified > .active > a,
-    .nav-tabs.nav-justified > .active > a:hover,
-    .nav-tabs.nav-justified > .active > a:focus {
-        border-bottom-color: #452e8e;
-    }
-}
+
 
 .nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
@@ -322,28 +307,39 @@ This class is redundant
 
 .team-img {
     height: 251px;
-    background: url(../img/hitesh.jpg);
+  
     position: relative;
     text-align: center;
-    background-size: 100%;
+   
+}
+.team1{
+	  background: url(../img/hitesh.jpg);
+	   background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.team2{
+	  background: url(../img/ankit.jpg);
+	   background-size: 100%;
+    background-repeat: no-repeat;
+}
+.team3{
+	  background: url(../img/shray.jpg);
+	   background-size: 100%;
+    background-repeat: no-repeat;
+}
+.team4{
+	  background: url(../img/mayank.jpg);
+	   background-size: 100%;
+    background-repeat: no-repeat;
+}
+.team5{
+	  background: url(../img/dhruvin.jpg);
+	   background-size: 100%;
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) and (min-width: 380px) {
-    .footer-right {
-        float: none;
-        text-align: center;
-    }
-    .footer-img {
-        float: none;
-    }
-    .footer-submenu {
-        display: none;
-    }
-    .footer-heading {
-        font-size: 16px;
-    }
-}
+
 
 .animatename {
     background-color: rgba(0, 0, 0, 0.8);
@@ -375,9 +371,9 @@ This class is redundant
 .scrolls{
 	position: relative;
 }
-#navtab{
-	width: 1170px;
-	z-index: 1000;
+.nav-tabscroll{
+
+    z-index: 1;
 	background-color: #fff;
 	top: 60px;
 }
@@ -395,10 +391,16 @@ This class is redundant
 }
 
  @media screen and (max-width: 768px) {
+
+ 	    .nav-tabs.nav-justified > .active > a,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #452e8e;
+    }
           
           
           .side-collapse {
-              top:50px;
+              top:60px;
               bottom:0;
               left:0;
               width:200px;
@@ -417,15 +419,44 @@ This class is redundant
           .navbar-default .navbar-nav > li > a {
            color: #000 !important;
           }
-          #navtab{
-          	width: 100%;
-          }
+          
           .contactmobile{
           	display: block !important;
           }
           .contactus{
           	display: none;
           }
+          .mobile-nav {
+           margin: 10px 4px;
+           }
+           .footer-right {
+        float: none;
+        text-align: center;
+           }
+        .footer-img {
+        float: none;
+         }
+    .footer-submenu {
+        display: none;
+    }
+    .footer-heading {
+        font-size: 16px;
+    }
+    .mobile-icons{
+    	display: block !important;
+    }
+        .jumbotron {
+        padding-top: 0px;
+        padding-bottom: 48px;
+    }
+    .modal-dialog {
+        width: 500px;
+        margin: 100px auto;
+    }
+    .home-icon {
+        width: 64px;
+        height: 64px;
+    }
       }
 
 .contactus{
@@ -456,5 +487,21 @@ This class is redundant
 
     border: 1px solid #fff;
     border-radius:4px;
+}
+.icon{
+	padding:5px 10px 5px 10px; 
+	font-size: 18px;
+}
+.mobile-icons{
+	display: none;
+}
+.fa-facebook{
+	color: #3b5998;
+}
+.fa-linkedin{
+	color: #007bb5
+}
+.fa-envelope{
+	color: #dd4b39;
 }
 

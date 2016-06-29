@@ -9,12 +9,13 @@
     <title>Univibe Network</title>
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navscroll1">
+<body data-spy="scroll" data-target=".navscroll" data-offset="200">
   
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+   <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -32,7 +33,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <li class="contactus"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
             <div class="navbar-inverse side-collapse in">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right mobile-nav">
                     <li><a href="#" class="menu-selected">Home</a></li>
                     <li><a href="#" class="menu">Services</a></li>
                     <li><a href="#" class="menu">Univibe+</a></li>
@@ -57,13 +58,15 @@
     </div>
     <!-- jumbotron ends hereeeeee .. -->
     <div class="container">
-        <div class="row" id="navscroll1">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 navscroll" >
             <!-- Nav tabs -->
-                <ul class="nav nav-tabs col-md-12 col-xs-12" role="tablist" id="navtab">
+                  <ul class="nav nav-tabs nav-tabscroll">
                    <li  class="active col-md-2 col-md-offset-4 col-xs-6 text-center"><a href="#story">Our Story</a></li>
                    <li class="col-md-2 col-xs-6 text-center"><a href="#team">Team</a></li>
                 </ul>
             </div>
+        </div>
                  <div id="story">
                     <div class="row">
                         <div class="col-md-6 col-xs-12">
@@ -84,7 +87,7 @@
                 <div  id="team">
                   <div class="row">
                     <div class="col-md-3 col-sm-12 thumb">
-                        <div class="team-img">
+                        <div class="team-img team1">
                             <div class="animatename">
                                 <div class="name">
                                     <h3 class="mgt0">Hitesh dudani</h3>
@@ -94,55 +97,46 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 thumb">
-                        <div class="team-img">
+                        <div class="team-img team2">
                             <div class="animatename">
                                 <div class="name">
-                                    <h3 class="mgt0">Hitesh dudani</h3>
+                                    <h3 class="mgt0">Ankit Porwal</h3>
                                     <h6>CO-Founder</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 thumb">
-                        <div class="team-img">
+                        <div class="team-img team3">
                             <div class="animatename">
                                 <div class="name">
-                                    <h3 class="mgt0">Hitesh dudani</h3>
+                                    <h3 class="mgt0">Shray Desai</h3>
                                     <h6>CO-Founder</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 thumb">
-                        <div class="team-img">
+                        <div class="team-img team4">
                             <div class="animatename">
                                 <div class="name">
-                                    <h3 class="mgt0">Hitesh dudani</h3>
-                                    <h6>CO-Founder</h6>
+                                    <h3 class="mgt0">Mayank Dwivedi</h3>
+                                    <h6>Software Developer</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 thumb">
-                        <div class="team-img">
+                        <div class="team-img team5">
                             <div class="animatename">
                                 <div class="name">
-                                    <h3 class="mgt0">Hitesh dudani</h3>
-                                    <h6>CO-Founder</h6>
+                                    <h3 class="mgt0">Dhruvin Sanghavi</h3>
+                                    <h6>UI Developer</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-12 thumb">
-                        <div class="team-img">
-                            <div class="animatename">
-                                <div class="name">
-                                    <h3 class="mgt0">Hitesh dudani</h3>
-                                    <h6>CO-Founder</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  
                   </div>
                 </div>
                
@@ -151,7 +145,7 @@
     </div>
     <!-- main content ends here  -->
     <!-- footer starts here -->
-  <footer>
+   <footer>
         <div class="container">
             <hr>
             <div class="col-md-2 col-xs-4">
@@ -181,7 +175,14 @@
             </div>
             <div class="col-md-6 col-xs-12">
                 <div class="footer-right">
-                    <img src="images/ulogo2.png" class="footer-img">
+                    <img src="img/logo/univibe_vertical_grayscale.png" class="footer-img">
+                    <div class="mobile-icons">
+                        <a href="" class="fa fa-facebook icon"></a>
+                        <a href="" class="fa fa-linkedin icon"></a>
+                        <a href="" class="fa fa-envelope icon"></a>
+
+                    </div>
+                  
                     <p class="copyright">Copyright &copy 2016, Univibe Network Pvt. Ltd.</p>
                 </div>
             </div>
