@@ -1,6 +1,6 @@
 # Changelog
 
-### Wednesday, 29 June 2016
+### v 0.9.0 (Pre release) Wednesday, 29 June 2016
 - Site readied for deployment by [Abbas](https://github.com/abbasdawood), included fixing build scripts and relevant sections in pages
 - Bumped version to 0.9.0 (pre-release)
 
