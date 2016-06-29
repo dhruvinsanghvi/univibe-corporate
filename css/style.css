@@ -265,14 +265,15 @@ This class is redundant
     border-left: none;
     border-right: none;
     border-bottom: 2px solid #452e8e;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .nav-tabs > li > a {
     border: none;
+    border-bottom-color:transparent;
     border-radius: 0px;
     color: #6f73b7;
-    font-size: 22px;
+    font-size: 16px;
 }
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
