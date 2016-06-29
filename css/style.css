@@ -6,6 +6,7 @@ body {
     padding: 0px;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 
 }
 
@@ -115,6 +116,8 @@ a, a:focus, a:hover{
     border-radius:4px;
     padding: 7px 5px 7px 5px !important;
     background-color: transparent;
+    color: #fff;
+
 }
 
 .footer-heading {
@@ -243,6 +246,7 @@ This class is redundant
 .bgservices {
     background-color: #19227d;
     overflow: hidden;
+    height: 60%;
 }
 
 .navbar-default {
@@ -318,7 +322,7 @@ This class is redundant
 
 .team-img {
     height: 251px;
-    background: url(../images/hitesh.jpg);
+    background: url(../img/hitesh.jpg);
     position: relative;
     text-align: center;
     background-size: 100%;
@@ -375,7 +379,7 @@ This class is redundant
 	width: 1170px;
 	z-index: 1000;
 	background-color: #fff;
-	top: 80px;
+	top: 60px;
 }
 
 .thumb {
@@ -389,3 +393,68 @@ This class is redundant
     width: 128px;
     height: 128px;
 }
+
+ @media screen and (max-width: 768px) {
+          
+          
+          .side-collapse {
+              top:50px;
+              bottom:0;
+              left:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+              z-index: 10000;
+              background-color: #fff;
+              text-align: left;
+
+
+          }
+          .side-collapse.in {
+              width:0;
+          }
+          .navbar-default .navbar-nav > li > a {
+           color: #000 !important;
+          }
+          #navtab{
+          	width: 100%;
+          }
+          .contactmobile{
+          	display: block !important;
+          }
+          .contactus{
+          	display: none;
+          }
+      }
+
+.contactus{
+	float: right;
+	color: #fff;
+	padding:15px 0px 0px 20px;
+	list-style: none;
+
+}
+.contactmobile{
+	float: right;
+	color: #fff;
+	padding:15px 0px 0px 20px;
+	list-style: none;
+	display: none;
+
+}
+.contactmobile a:hover{
+	text-decoration: none;
+	color: #fff;
+
+    border: 1px solid #fff;
+    border-radius:4px;
+}
+.contactus a:hover{
+	text-decoration: none;
+	color: #fff;
+
+    border: 1px solid #fff;
+    border-radius:4px;
+}
+
