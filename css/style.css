@@ -1,9 +1,13 @@
+
+
 html,
 body {
     margin: 0px;
     padding: 0px;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+
 }
 
 .white,
@@ -116,6 +120,8 @@ a:hover {
     border-radius: 4px;
     padding: 7px 5px 7px 5px !important;
     background-color: transparent;
+    color: #fff;
+
 }
 
 .footer-heading {
@@ -157,7 +163,7 @@ a:hover {
 }
 
 .main-heading {
-    //font-size: 36px; Never override sizes, bootstrap handles for various resolutions
+    /*font-size: 36px; Never override sizes, bootstrap handles for various resolutions*/
     color: #fff;
 }
 
@@ -228,8 +234,6 @@ This class is redundant
     height: 350px;
     left: 30%;
 }
-
-
 
 .client-card{
     height:200px;
@@ -333,12 +337,12 @@ This class is redundant
 .bgservices {
     background-color: #19227d;
     overflow: hidden;
+    height: 60%;
 }
 
 .navbar-default {
     background-color: transparent;
     transition: all 0.5s;
-    //position: fixed; //Use bootstrap options and don't manually fix, you are using bootstrap for a reason
     width: 100%;
     z-index: 1000;
     height: 60px;
@@ -361,14 +365,19 @@ This class is redundant
     border-left: none;
     border-right: none;
     border-bottom: 2px solid #452e8e;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .nav-tabs > li > a {
     border: none;
+    border-bottom-color:transparent;
     border-radius: 0px;
     color: #6f73b7;
-    font-size: 22px;
+    font-size: 16px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .nav-tabs > li > a:hover {
@@ -377,13 +386,7 @@ This class is redundant
     border-bottom: 2px solid #452e8e;
 }
 
-@media (min-width: 768px) {
-    .nav-tabs.nav-justified > .active > a,
-    .nav-tabs.nav-justified > .active > a:hover,
-    .nav-tabs.nav-justified > .active > a:focus {
-        border-bottom-color: #452e8e;
-    }
-}
+
 
 .nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
@@ -405,28 +408,39 @@ This class is redundant
 
 .team-img {
     height: 251px;
-    background: url(../images/hitesh.jpg);
+  
     position: relative;
     text-align: center;
-    background-size: 100%;
+   
+}
+.team1{
+	  background: url(../img/hitesh.jpg);
+	   background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.team2{
+	  background: url(../img/ankit.jpg);
+	   background-size: 100%;
+    background-repeat: no-repeat;
+}
+.team3{
+	  background: url(../img/shray.jpg);
+	   background-size: 100%;
+    background-repeat: no-repeat;
+}
+.team4{
+	  background: url(../img/mayank.jpg);
+	   background-size: 100%;
+    background-repeat: no-repeat;
+}
+.team5{
+	  background: url(../img/dhruvin.jpg);
+	   background-size: 100%;
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) and (min-width: 380px) {
-    .footer-right {
-        float: none;
-        text-align: center;
-    }
-    .footer-img {
-        float: none;
-    }
-    .footer-submenu {
-        display: none;
-    }
-    .footer-heading {
-        font-size: 16px;
-    }
-}
+
 
 .animatename {
     background-color: rgba(0, 0, 0, 0.8);
@@ -455,13 +469,140 @@ This class is redundant
     margin-top: 30px;
 }
 
+.scrolls{
+	position: relative;
+}
+.nav-tabscroll{
+
+    z-index: 1;
+	background-color: #fff;
+	top: 60px;
+}
+
 .thumb {
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 4px;
+
 }
 
 .home-icon {
     width: 128px;
     height: 128px;
 }
+
+ @media screen and (max-width: 768px) {
+
+ 	    .nav-tabs.nav-justified > .active > a,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #452e8e;
+    }
+          
+          
+          .side-collapse {
+              top:60px;
+              bottom:0;
+              left:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+              z-index: 10000;
+              background-color: #fff;
+              text-align: left;
+
+
+          }
+          .side-collapse.in {
+              width:0;
+          }
+          .navbar-default .navbar-nav > li > a {
+           color: #000 !important;
+          }
+          
+          .contactmobile{
+          	display: block !important;
+          }
+          .contactus{
+          	display: none;
+          }
+          .mobile-nav {
+           margin: 10px 4px;
+           }
+           .footer-right {
+        float: none;
+        text-align: center;
+           }
+        .footer-img {
+        float: none;
+         }
+    .footer-submenu {
+        display: none;
+    }
+    .footer-heading {
+        font-size: 16px;
+    }
+    .mobile-icons{
+    	display: block !important;
+    }
+        .jumbotron {
+        padding-top: 0px;
+        padding-bottom: 48px;
+    }
+    .modal-dialog {
+        width: 500px;
+        margin: 100px auto;
+    }
+    .home-icon {
+        width: 64px;
+        height: 64px;
+    }
+      }
+
+.contactus{
+	float: right;
+	color: #fff;
+	padding:15px 0px 0px 20px;
+	list-style: none;
+
+}
+.contactmobile{
+	float: right;
+	color: #fff;
+	padding:15px 0px 0px 20px;
+	list-style: none;
+	display: none;
+
+}
+.contactmobile a:hover{
+	text-decoration: none;
+	color: #fff;
+
+    border: 1px solid #fff;
+    border-radius:4px;
+}
+.contactus a:hover{
+	text-decoration: none;
+	color: #fff;
+
+    border: 1px solid #fff;
+    border-radius:4px;
+}
+.icon{
+	padding:5px 10px 5px 10px; 
+	font-size: 18px;
+}
+.mobile-icons{
+	display: none;
+}
+.fa-facebook{
+	color: #3b5998;
+}
+.fa-linkedin{
+	color: #007bb5
+}
+.fa-envelope{
+	color: #dd4b39;
+}
+

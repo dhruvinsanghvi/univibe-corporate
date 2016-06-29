@@ -10,47 +10,241 @@
     <!-- Bootstrap -->
     <!-- build:js app.full.min.css -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
     <!-- /build -->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navscroll" data-offset="200">
     <!-- main content goes here -->
-    <div class="jumbotron bgservices">
-        <!--nav bar starting here-->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="img/ulogo.png" class="logo" /></a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="menu-selected">Home</a></li>
-                        <li><a href="#" class="menu">Services</a></li>
-                        <li><a href="#" class="menu">Univibe+</a></li>
-                        <li class="pt9"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+   
+       <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="logo"></div>
+                </a>
+                <li class="contactmobile"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
-        <!--<p class="services-heading">Meaningful Alumni Networking</p>
-    <h4 class="services-heading1">Some meaningful subtitle that is just about this long</h4>-->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <li class="contactus"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
+            <div class="navbar-inverse side-collapse in">
+                <ul class="nav navbar-nav navbar-right mobile-nav">
+                    <li><a href="#" class="menu-selected">Home</a></li>
+                    <li><a href="#" class="menu">Services</a></li>
+                    <li><a href="#" class="menu">Univibe+</a></li>
+                   
+                </ul>
+            </div>
+            
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+  
+     <div class="jumbotron bgservices">
         <ul id="scene" class="scene">
-            <li class="layer" data-depth="0.60"><img src="images/globe-large.png" class="globe-large"></li>
-            <li class="layer" data-depth="1.00"><img src="images/globe-small.png" class="globe-small"></li>
-            <li class="layer" data-depth="0.80"><img src="images/globe-mid.png" class="globe-med"></li>
+            <li class="layer" data-depth="0.60"><img src="img/globe-large.png" class="globe-large"></li>
+            <li class="layer" data-depth="1.00"><img src="img/globe-small.png" class="globe-small"></li>
+            <li class="layer" data-depth="0.80"><img src="img/globe-mid.png" class="globe-med"></li>
         </ul>
-        <!-- modal starts here -->
+       
+    </div>
+    <!-- jumbotron ends hereeeeee .. -->
+    <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-xs-12 navscroll">
+            <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-tabscroll">
+                   <li  class="active col-md-2 col-md-offset-4 col-xs-6 text-center"><a href="#institute">Institutes</a></li>
+                   <li class="col-md-2 col-xs-6 text-center"><a href="#alumns">Alumns</a></li>
+                </ul>
+               </div>
+            </div>
+            <!-- Tab panes -->
+                <div id="institute">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12 mgt20">
+                            <img src="images/contact.jpg" class="tab-img">
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <h2 class="content-heading">Alumni networking platform (web & mobile application)</h2>
+                            <p>Univibe makes it easy for institutes to have their own branded web and mobile platform. We offer a robust, feature-rich platform that enables you not only to keep your alums engaged and connected, but to maximize the value of these connections.<br>
+
+                            Once your platform is built, we help you get the word out and making your students aware by creating registrations campaigns on major social networking platforms. We also create and execute an entire PR strategy to get the word out about the platform.
+
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-8 col-xs-12">
+                            <h2 class="content-heading">Updated information & contacts</h2>
+                            <p>Building the alumni database and keeping it updated is the biggest hurdle point for any institution and Univibe helps you tackle it effectively <br>
+
+                            They can register using LinkedIn, Facebook or Google+. This way you have the most up to information and your alumns can find those they have lost contact with.
+
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-xs-12 mgt20">
+                            <img src="images/contact.jpg" class="tab-img">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12 mgt20">
+                            <img src="images/contact.jpg" class="tab-img">
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <h2 class="content-heading">Fundraising support</h2>
+                            <p>Our fundraising platform puts the tools in your hands to raise donations for the different projects that matter. We help you to get donations for all those projects and activities so essential to your institute.<br>
+
+                            We even set up payment gateway for you, to seamlessly collect money for donations and event tickets.
+
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-8 col-xs-12">
+                            <h2 class="content-heading">Student mentorship framework</h2>
+                            <p>Our mentoring framework connects the student for personal growth and development.  Alums can guide the juniors on various aspects and help them prepare for life after college.</p>
+                        </div>
+                        <div class="col-md-4 col-xs-12 mgt20">
+                            <img src="images/contact.jpg" class="tab-img">
+                        </div>
+                    </div>
+                    <hr>
+
+                     <div class="row">
+                        <div class="col-md-4 col-xs-12 mgt20">
+                            <img src="images/contact.jpg" class="tab-img">
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <h2 class="content-heading">Connected regional chapters</h2>
+                            <p>Chapters play a vital role in keeping students informed about their institute. Our platform offers a vast network of regional chapters that keep you connected to you institute no matter where you live. 
+
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+
+                </div>
+
+                <div id="alumns">
+                    <div class="row">
+                        
+                        <div class="col-md-8 col-xs-12">
+                            <h2 class="content-heading">Networking</h2>
+                            <p>Get access to an immense network of professional contacts—all with whom you already have one thing in common. Reconnect and reminisce with old classmates. It could open the doors to new and exciting opportunities, steer you toward coveted job openings and even new clients. 
+
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 mgt20">
+                            <img src="images/contact.jpg" class="tab-img">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+
+                         <div class="col-md-4 col-xs-12 mgt20">
+                            <img src="images/contact.jpg" class="tab-img">
+                        </div>
+
+                        <div class="col-md-8 col-xs-12">
+                            <h2 class="content-heading">Self-development and growth</h2>
+                            <p><b>Webinars:</b> Get access to webinars, where you get engaging and educative content, without having to leave the office or spend a lot of money.<br>
+
+                            <b>Career advice & support:</b> Whether you’re making a career change, positioning yourself for that next promotion, or looking to hire for someone, your university career center can help you.</br>
+
+                            <b>Discounted and privileged services:</b> Get exclusive access to special services like job postings, resume reviews, and even networking events.</br>
+
+                            <b>Consultants and mentors:</b>The mentorship program brings together students and alumni in purposeful, mutually rewarding relationships. It creates unique opportunity for students to develop relationships, receive information and advice related to academic and professional development.
+
+                            </p>
+                        </div>
+                       
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                       
+                        <div class="col-md-8 col-xs-12">
+                            <h2 class="content-heading">Regional event scheduling</h2>
+                            <p>If you'd like to reconnect with institute but can't make it to the main event, create and promote upcoming regional events in your local area. Get a chance to reconnect with your old classmates and locate new alums with our platform. Celebrate events in your area and never miss out any gatherings!
+
+                            </p>
+                        </div>
+
+                         <div class="col-md-4 col-xs-12 mgt20">
+                            <img src="images/contact.jpg" class="tab-img">
+                         </div>
+                    </div>
+                    
+                   
+
+
+             </div>
+          </div>
+    
+    <!-- main content ends here  -->
+    <!-- footer starts here -->
+    <footer>
+        <div class="container">
+            <hr>
+            <div class="col-md-2 col-xs-4">
+                <h2 class="footer-heading">At Univibe</h2>
+                <ul class="list-unstyled footer-submenu">
+                    <li><a href="#" class="footer-menu">Team</a></li>
+                    <li><a href="#" class="footer-menu">Our Story</a></li>
+                    <li><a href="#" class="footer-menu">Careers</a></li>
+                    <li><a href="#" class="footer-menu">Partners</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-4">
+                <h2 class="footer-heading">What We Do</h2>
+                <ul class="list-unstyled footer-submenu">
+                    <li><a href="#" class="footer-menu">Services</a></li>
+                    <li><a href="#" class="footer-menu">Payments</a></li>
+                    <li><a href="#" class="footer-menu">Events & PR</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-4">
+                <h2 class="footer-heading">Connect</h2>
+                <ul class="list-unstyled footer-submenu">
+                    <li><a href="#" class="footer-menu">Facebook</a></li>
+                    <li><a href="#" class="footer-menu">LinkedIn</a></li>
+                    <li><a href="#" class="footer-menu">Mail Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="footer-right">
+                    <img src="img/logo/univibe_vertical_grayscale.png" class="footer-img">
+                    <div class="mobile-icons">
+                        <a href="" class="fa fa-facebook icon"></a>
+                        <a href="" class="fa fa-linkedin icon"></a>
+                        <a href="" class="fa fa-envelope icon"></a>
+
+                    </div>
+                  
+                    <p class="copyright">Copyright &copy 2016, Univibe Network Pvt. Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- modal starts here -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -79,89 +273,23 @@
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                   <button type="button" class="btn btn-primary">Save changes</button>
               </div>-->
+
                 </div>
             </div>
         </div>
         <!-- modal ends here -->
-    </div>
-    <!-- jumbotron ends hereeeeee .. -->
-    <div class="container">
-        <div>
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-                <li role="presentation" class=""><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">
-                    <div class="row">
-                        <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
-                        </div>
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Our Clients</h2>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Our Clients</h2>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                        </div>
-                        <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
-                        </div>
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="profile">...</div>
-            </div>
-        </div>
-    </div>
-    <!-- main content ends here  -->
-    <!-- footer starts here -->
-    <footer>
-        <div class="container-fluid">
-            <hr>
-            <div class="col-md-2 col-xs-12">
-                <h2 class="footer-heading">At Univibe</h2>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="footer-menu">Team</a></li>
-                    <li><a href="#" class="footer-menu">Our Story</a></li>
-                    <li><a href="#" class="footer-menu">Careers</a></li>
-                    <li><a href="#" class="footer-menu">Partners</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 col-xs-12">
-                <h2 class="footer-heading">What We Do</h2>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="footer-menu">Services</a></li>
-                    <li><a href="#" class="footer-menu">Payments</a></li>
-                    <li><a href="#" class="footer-menu">Events & PR</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 col-xs-12">
-                <h2 class="footer-heading">Connect</h2>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="footer-menu">Facebook</a></li>
-                    <li><a href="#" class="footer-menu">LinkedIn</a></li>
-                    <li><a href="#" class="footer-menu">Mail Us</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <div class="footer-right">
-                    <img src="images/ulogo2.png" class="footer-img">
-                    <p class="copyright">Copyright &copy 2016, Univibe Network Pvt. Ltd.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- build:js app.full.min.js -->
     <script src="js/parallax.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+
+    </script>
+
     <!-- /build -->
 </body>
 
