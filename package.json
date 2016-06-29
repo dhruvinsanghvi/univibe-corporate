@@ -1,6 +1,6 @@
 {
   "name": "univibecorp",
-  "version": "0.0.2",
+  "version": "0.9.0",
   "description": "univibe corporate website",
   "main": "Gruntfile.js",
   "homepage": "index.html",

@@ -84,7 +84,8 @@ module.exports = function(grunt) {
                 files: [
                     { src: ['bower_components/font-awesome/fonts/**'], dest: 'dist/', filter: 'isFile', expand: true },
                     { src: ['bower_components/bootstrap/fonts/**'], dest: 'dist/', filter: 'isFile', expand: true },
-                    { src: ['images/*'], dest: 'dist/', filter: 'isFile', expand: true },
+                    { src: ['img/*'], dest: 'dist/', filter: 'isFile', expand: true },
+                    { src: ['img/**/*'], dest: 'dist/', filter: 'isFile', expand: true },
                     { src: ['*.html'], dest: 'dist/', filter: 'isFile', expand: true }
                 ]
             }
@@ -97,7 +98,7 @@ module.exports = function(grunt) {
                         { selector: 'link[rel="stylesheet"][data-concat!="false"]', attribute: 'href', writeto: 'appcss' }
                     ]
                 },
-                src: '*.html'
+                src: 'index.html'
             }/*,
             update: {
                 options: {
@@ -128,7 +129,7 @@ module.exports = function(grunt) {
                 sourceMap: true
             },
             main: {
-                src: 'temp/app.clean.js',
+                src: '<%= dom_munger.data.appjs %>',
                 dest: 'dist/app.full.min.js'
             }
         },
@@ -160,8 +161,7 @@ module.exports = function(grunt) {
         processhtml: {
             options: {
                 data: {
-                    script: 'assets/js/<%= pkg.name %>.min.js',
-                    stylesheet: 'assets/css/style.min.css'
+                    stylesheet: 'app.full.min.css'
                 }
             },
             dist: {
@@ -181,7 +181,7 @@ module.exports = function(grunt) {
     // Default task.
     grunt.registerTask('default', ['jshint', 'dom_munger', 'connect:main', 'watch']);
     grunt.registerTask('serve', ['jshint', 'dom_munger', 'connect:main', 'watch']);
-    grunt.registerTask('build', ['jshint', 'clean:before', 'dom_munger:read', 'cssmin', 'concat', 'removelogging', 'uglify', 'copy', 'processhtml', 'clean:after']);
+    grunt.registerTask('build', ['jshint', 'clean:before', 'dom_munger:read', 'cssmin:main', 'removelogging', 'uglify', 'copy', 'processhtml', 'clean:after']);
 
 
     grunt.event.on('watch', function(action, filepath) {

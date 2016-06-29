@@ -8,18 +8,26 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Univibe Network</title>
     <!-- Bootstrap -->
-    <!-- build:js app.full.min.css -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700, 400,100,300' rel='stylesheet' type='text/css' data-concat="false">
+    <!-- build:remove -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    <!-- /build -->
+    <!-- build:template 
+    <link href="<%= stylesheet %>" rel="stylesheet" type="text/css">
+    /build-->
+    <!-- build:js app.full.min.js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/main.js"></script>
     <!-- /build -->
 </head>
 
 <body data-spy="scroll" data-target=".navscroll" data-offset="200">
     <!-- main content goes here -->
-   
-       <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -38,167 +46,161 @@
             <li class="contactus"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
             <div class="navbar-inverse side-collapse in">
                 <ul class="nav navbar-nav navbar-right mobile-nav">
-                    <li><a href="#" class="menu-selected">Home</a></li>
-                    <li><a href="#" class="menu">Services</a></li>
+                    <li><a href="index.html" class="menu-selected">Home</a></li>
+                    <li><a href="services.html" class="menu">Services</a></li>
                     <li><a href="#" class="menu">Univibe+</a></li>
-                   
                 </ul>
             </div>
-            
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-  
-     <div class="jumbotron bgservices">
+    <div class="jumbotron bghome">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-2 col-md-8 col-lg-8">
+                    <h1 class="white text-capitalize">Go beyond <em><u>just</u></em> connections</h1>
+                    <p class="lead white">Engage your alumni. Stay Connected with your alma mater. And Much More.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-3 col-md-6 col-lg-6">
+                    <img src="img/generic/univibeicons_static.png" class="img-responsive center-block service-img">
+                </div>
+            </div>
+        </div>
+        <!--
         <ul id="scene" class="scene">
             <li class="layer" data-depth="0.60"><img src="img/globe-large.png" class="globe-large"></li>
             <li class="layer" data-depth="1.00"><img src="img/globe-small.png" class="globe-small"></li>
             <li class="layer" data-depth="0.80"><img src="img/globe-mid.png" class="globe-med"></li>
-        </ul>
-       
+        </ul>-->
     </div>
     <!-- jumbotron ends hereeeeee .. -->
     <div class="container">
-            <div class="row">
-               <div class="col-md-12 col-xs-12 navscroll">
-            <!-- Nav tabs -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-xs-12 navscroll">
+                <!-- Nav tabs -->
                 <ul class="nav nav-tabs nav-tabscroll">
-                   <li  class="active col-md-2 col-md-offset-4 col-xs-6 text-center"><a href="#institute">Institutes</a></li>
-                   <li class="col-md-2 col-xs-6 text-center"><a href="#alumns">Alumns</a></li>
+                    <li class="active col-md-2 col-md-offset-4 col-xs-6 text-center"><a href="#institute">Institutes</a></li>
+                    <li class="col-md-2 col-xs-6 text-center"><a href="#alumns">Alumns</a></li>
                 </ul>
-               </div>
             </div>
-            <!-- Tab panes -->
-                <div id="institute">
-                    <div class="row">
-                        <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
-                        </div>
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Alumni networking platform (web & mobile application)</h2>
-                            <p>Univibe makes it easy for institutes to have their own branded web and mobile platform. We offer a robust, feature-rich platform that enables you not only to keep your alums engaged and connected, but to maximize the value of these connections.<br>
-
-                            Once your platform is built, we help you get the word out and making your students aware by creating registrations campaigns on major social networking platforms. We also create and execute an entire PR strategy to get the word out about the platform.
-
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Updated information & contacts</h2>
+        </div>
+        <!-- Tab panes -->
+        <div id="institute">
+            <div class="row service">
+                <div class="col-md-5 col-md-offset-1 col-xs-12">
+                    <img srcset="img/icons/1x/platform.png 1x, img/icons/2x/platform.png 2x, img/icons/3x/platform.png 3x" class=" center-block">
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <h3 class="text-capitalize">Alumni networking platform<br><small>(Web & mobile application)</small></h3>
+                    <p>Univibe makes it easy for institutes to have their own branded web and mobile platform. We offer a robust, feature-rich platform that enables you not only to keep your alums engaged and connected, but to maximize the value of these connections.
+                        <br> Once your platform is built, we help you get the word out and making your students aware by creating registrations campaigns on major social networking platforms. We also create and execute an entire PR strategy to get the word out about the platform.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row service">
+                <div class="col-md-5 col-md-offset-1 col-xs-12">
+                    <h3 class="text-capitalize">Updated information &amp; Contacts</h2>
                             <p>Building the alumni database and keeping it updated is the biggest hurdle point for any institution and Univibe helps you tackle it effectively <br>
 
                             They can register using LinkedIn, Facebook or Google+. This way you have the most up to information and your alumns can find those they have lost contact with.
 
                             </p>
                         </div>
-                        <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
+                        <div class="col-md-5 col-xs-12">
+                            <img srcset="img/icons/1x/contact_network_alt.png 1x, img/icons/2x/contact_network_alt.png 2x, img/icons/3x/contact_network_alt.png 3x" class="center-block">
                         </div>
                     </div>
                     <hr>
 
-                    <div class="row">
-                        <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
+                    <div class="row service">
+                        <div class="col-md-5 col-md-offset-1 col-xs-12">
+                            <img srcset="img/icons/1x/funds.png 1x, img/icons/2x/funds.png 2x, img/icons/3x/funds.png 3x" class="center-block">
                         </div>
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Fundraising support</h2>
-                            <p>Our fundraising platform puts the tools in your hands to raise donations for the different projects that matter. We help you to get donations for all those projects and activities so essential to your institute.<br>
-
-                            We even set up payment gateway for you, to seamlessly collect money for donations and event tickets.
-
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Student mentorship framework</h2>
-                            <p>Our mentoring framework connects the student for personal growth and development.  Alums can guide the juniors on various aspects and help them prepare for life after college.</p>
-                        </div>
-                        <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
-                        </div>
-                    </div>
-                    <hr>
-
-                     <div class="row">
-                        <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
-                        </div>
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Connected regional chapters</h2>
-                            <p>Chapters play a vital role in keeping students informed about their institute. Our platform offers a vast network of regional chapters that keep you connected to you institute no matter where you live. 
-
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-
-
+                        <div class="col-md-5 col-xs-12">
+                            <h3 class="text-capitalize">Fundraising Support</h3>
+                    <p>Our fundraising platform puts the tools in your hands to raise donations for the different projects that matter. We help you to get donations for all those projects and activities so essential to your institute.
+                        <br> We even set up payment gateway for you, to seamlessly collect money for donations and event tickets.
+                    </p>
                 </div>
-
-                <div id="alumns">
-                    <div class="row">
-                        
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Networking</h2>
-                            <p>Get access to an immense network of professional contacts—all with whom you already have one thing in common. Reconnect and reminisce with old classmates. It could open the doors to new and exciting opportunities, steer you toward coveted job openings and even new clients. 
-
-                            </p>
-                        </div>
-
-                        <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-
-                         <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
-                        </div>
-
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Self-development and growth</h2>
-                            <p><b>Webinars:</b> Get access to webinars, where you get engaging and educative content, without having to leave the office or spend a lot of money.<br>
-
-                            <b>Career advice & support:</b> Whether you’re making a career change, positioning yourself for that next promotion, or looking to hire for someone, your university career center can help you.</br>
-
-                            <b>Discounted and privileged services:</b> Get exclusive access to special services like job postings, resume reviews, and even networking events.</br>
-
-                            <b>Consultants and mentors:</b>The mentorship program brings together students and alumni in purposeful, mutually rewarding relationships. It creates unique opportunity for students to develop relationships, receive information and advice related to academic and professional development.
-
-                            </p>
-                        </div>
-                       
-                    </div>
-                    <hr>
-
-                    <div class="row">
-                       
-                        <div class="col-md-8 col-xs-12">
-                            <h2 class="content-heading">Regional event scheduling</h2>
-                            <p>If you'd like to reconnect with institute but can't make it to the main event, create and promote upcoming regional events in your local area. Get a chance to reconnect with your old classmates and locate new alums with our platform. Celebrate events in your area and never miss out any gatherings!
-
-                            </p>
-                        </div>
-
-                         <div class="col-md-4 col-xs-12 mgt20">
-                            <img src="images/contact.jpg" class="tab-img">
-                         </div>
-                    </div>
-                    
-                   
-
-
-             </div>
-          </div>
-    
+            </div>
+            <hr>
+            <div class="row service">
+                <div class="col-md-5 col-md-offset-1 col-xs-12">
+                    <h3 class="text-capitalize">Student mentorship framework</h3>
+                    <p>Our mentoring framework connects the student for personal growth and development. Alums can guide the juniors on various aspects and help them prepare for life after college.</p>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <img srcset="img/icons/1x/growth.png 1x, img/icons/2x/growth.png 2x, img/icons/3x/growth.png 3x" class="center-block">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1 col-xs-12">
+                    <img srcset="img/icons/1x/alma_mater.png 1x, img/icons/2x/alma_mater.png 2x, img/icons/3x/alma_mater.png 3x" class="center-block">
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <h3 class="text-capitalize">Connected regional chapters</h3>
+                    <p>Chapters play a vital role in keeping students informed about their institute. Our platform offers a vast network of regional chapters that keep you connected to you institute no matter where you live.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="alumns">
+            <div class="row service">
+                <div class="col-md-5 col-md-offset-1 col-xs-12">
+                    <h3 class="text-capitalize">Networking</h3>
+                    <p>Get access to an immense network of professional contacts—all with whom you already have one thing in common. Reconnect and reminisce with old classmates. It could open the doors to new and exciting opportunities, steer you toward coveted job openings and even new clients.
+                    </p>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <img srcset="img/icons/1x/contact_network.png 1x, img/icons/2x/contact_network.png 2x, img/icons/3x/contact_network.png 3x" class="center-block">
+                </div>
+            </div>
+            <hr>
+            <div class="row service">
+                <div class="col-md-5 col-md-offset-1 col-xs-12">
+                    <img srcset="img/icons/1x/premier_content.png 1x, img/icons/2x/premier_content.png 2x, img/icons/3x/premier_content.png 3x" class="center-block">
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <h3 class="text-capitalize">Self-development and growth</h3>
+                    <ul>
+                        <li>
+                            <strong><i class="fa fa-video-camera"></i> Webinars</strong>
+                            <br>Get access to webinars, where you get engaging and educative content, without having to leave the office or spend a lot of money
+                        </li>
+                        <li>
+                            <strong><i class="fa fa-graduation-cap"></i> Career advice &amp; support</strong>
+                            <br>Whether you’re making a career change, positioning yourself for that next promotion, or looking to hire for someone, your university career center can help you
+                        </li>
+                        <li>
+                            <strong><i class="fa fa-briefcase"></i> Discounted &amp; privileged services</strong>
+                            <br>Get exclusive access to special services like job postings, resume reviews, and even networking events
+                        </li>
+                        <li>
+                            <strong><i class="fa fa-users"></i> Consultants &amp; mentors</strong>
+                            <br>The mentorship program brings together students and alumni in purposeful, mutually rewarding relationships. It creates unique opportunity for students to develop relationships, receive information and advice related to academic and professional development
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row service">
+                <div class="col-md-5 col-md-offset-1 col-xs-12">
+                    <h3 class="text-capitalize">Regional event scheduling</h3>
+                    <p>If you'd like to reconnect with institute but can't make it to the main event, create and promote upcoming regional events in your local area. Get a chance to reconnect with your old classmates and locate new alums with our platform. Celebrate events in your area and never miss out any gatherings!
+                    </p>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <img srcset="img/icons/1x/events_local.png 1x, img/icons/2x/events_local.png 2x, img/icons/3x/events_local.png 3x" class="center-block">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- main content ends here  -->
     <!-- footer starts here -->
     <footer>
@@ -236,61 +238,41 @@
                         <a href="" class="fa fa-facebook icon"></a>
                         <a href="" class="fa fa-linkedin icon"></a>
                         <a href="" class="fa fa-envelope icon"></a>
-
                     </div>
-                  
                     <p class="copyright">Copyright &copy 2016, Univibe Network Pvt. Ltd.</p>
                 </div>
             </div>
         </div>
     </footer>
-     <!-- modal starts here -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title text-center" id="myModalLabel">Get In Touch</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <input type="name" class="form-control form-elements" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control form-elements" id="exampleInputEmail1" placeholder="Email Address">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-elements" placeholder="Organization">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-elements" placeholder="10 Digit Phone">
-                            </div>
-                            <button type="submit" class="theme-btn full-width-btn">Submit</button>
-                        </form>
-                    </div>
-                    <!--<div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>-->
-
+    <!-- modal starts here -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">Get In Touch</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="name" class="form-control form-elements" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-elements" id="exampleInputEmail1" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-elements" placeholder="Organization">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-elements" placeholder="10 Digit Phone">
+                        </div>
+                        <button type="submit" class="theme-btn full-width-btn">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- modal ends here -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- build:js app.full.min.js -->
-    <script src="js/parallax.js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript">
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
-
-
-    </script>
-
-    <!-- /build -->
+    </div>
+    <!-- modal ends here -->
 </body>
 
 </html>
