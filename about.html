@@ -26,11 +26,10 @@
 </head>
 
 <body data-spy="scroll" data-target=".navscroll" data-offset="200">
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
+                 <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -41,26 +40,22 @@
                 </a>
                 <li class="contactmobile"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <li class="contactus"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
-            <div class="navbar-inverse side-collapse in">
-                <ul class="nav navbar-nav navbar-right mobile-nav">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" class="menu-selected">Home</a></li>
                     <li><a href="services.html" class="menu">Services</a></li>
                     <li><a href="#" class="menu">Univibe+</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
-    <!-- main content goes here -->
     <div class="jumbotron bghome">
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2 col-md-8 col-lg-8">
-                    <h1 class="white">Meaningful Alumni Networking</h1>
-                    <p class="lead white">Some meaningful subtitle that is just about this long</p>
+                    <h1 class="white">For Alumni. By Alumni</h1>
+                  
                 </div>
             </div>
         </div>
@@ -71,8 +66,9 @@
             <div class="col-md-8 col-md-offset-2 col-xs-12 navscroll">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs nav-tabscroll">
-                    <li class="active col-md-5 col-md-offset-1 col-xs-6 text-center"><a href="#story">Our Story</a></li>
-                    <li class="col-md-2 col-xs-6 text-center"><a href="#team">Team</a></li>
+                    <li class="active col-md-4 col-xs-4 text-center"><a href="#story">OurStory</a></li>
+                    <li class="col-md-4 col-xs-4 text-center"><a href="#team">Team</a></li>
+                    <li class="col-md-4 col-xs-4 text-center"><a href="#careers">Careers</a></li>
                 </ul>
             </div>
         </div>
@@ -82,13 +78,11 @@
                     <h2 class="text-capitalize">What we&apos;re all about</h2>
                     <hr>
                 </div>
-                <div class="col-md-6 col-xs-12">
-                    <img src="">
-                </div>
-                <div class="col-md-6">
-                    <p>Univibe network started off with this simple conversation to connect alumni and relive our college memories. As alums of a management institute in Mumbai, we understand leveraging the value of your alumni network can be one of the biggest challenges an institution faces.</p>
-                    <p>We make it easy for schools to have their own branded web and mobile platform that not only keeps your alumni engaged and connected, and offers professional and personal growth. </p>
-                    <p>By helping you unlock the full networking potential of your alumni database, we aim to build goodwill towards your organization, improve your alumni relations, and help you achieve your advancement goals.</p>
+                
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <p>Univibe network started off with this simple conversation to connect alumni and relive our college memories. As alums of a management institute in Mumbai, we understand leveraging the value of your alumni network can be one of the biggest challenges an institution faces.<br><br>
+                    We make it easy for schools to have their own branded web and mobile platform that not only keeps your alumni engaged and connected, and offers professional and personal growth.<br><br>
+                    By helping you unlock the full networking potential of your alumni database, we aim to build goodwill towards your organization, improve your alumni relations, and help you achieve your advancement goals.</p>
                 </div>
             </div>
         </div>
@@ -156,53 +150,65 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <div id="careers">
+            <div class="row service">
+                <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+                    <h2 class="text-capitalize">Careers</h2>
+                    <hr>
+                   
+                    <p class="lead">We are hiring across Technology, Marketing and Content. Please email your resume to info[at]univibenetwork[dot]in</p>
+                </div>
+            </div>
+
+
+        </div>
     </div>
     <!-- main content ends here  -->
     <!-- footer starts here -->
-    <footer>
+       <footer>
         <div class="container">
             <hr>
             <div class="col-md-2 col-xs-4">
-                <h2 class="footer-heading">At Univibe</h2>
-                <ul class="list-unstyled footer-submenu">
-                    <li><a href="#" class="footer-menu">Team</a></li>
-                    <li><a href="#" class="footer-menu">Our Story</a></li>
-                    <li><a href="#" class="footer-menu">Careers</a></li>
-                    <li><a href="#" class="footer-menu">Partners</a></li>
+                <h5>At Univibe</h5>
+                <ul class="list-unstyled hidden-xs">
+                    <li><a href="about.html" class="footer-menu">Our Story</a></li>
+                    <li><a href="about.html" class="footer-menu">Team</a></li>
+                    <li><a href="about.html" class="footer-menu">Careers</a></li>
+                    <!--<li><a href="#" class="footer-menu">Partners</a></li>-->
                 </ul>
             </div>
             <div class="col-md-2 col-xs-4">
-                <h2 class="footer-heading">What We Do</h2>
-                <ul class="list-unstyled footer-submenu">
-                    <li><a href="#" class="footer-menu">Services</a></li>
-                    <li><a href="#" class="footer-menu">Payments</a></li>
-                    <li><a href="#" class="footer-menu">Events & PR</a></li>
+               <h5>What We Do</h5>
+                <ul class="list-unstyled hidden-xs">
+                    <li><a href="services.html" class="footer-menu">Services</a></li>
+                    <!--<li><a href="#" class="footer-menu">Payments</a></li>-->
                 </ul>
             </div>
             <div class="col-md-2 col-xs-4">
-                <h2 class="footer-heading">Connect</h2>
-                <ul class="list-unstyled footer-submenu">
-                    <li><a href="#" class="footer-menu">Facebook</a></li>
-                    <li><a href="#" class="footer-menu">LinkedIn</a></li>
-                    <li><a href="#" class="footer-menu">Mail Us</a></li>
+                <h5>Connect</h5>
+                <ul class="list-unstyled hidden-xs">
+                    <li><a href="https://www.facebook.com/univibenetworks/?fref=ts"  class="footer-menu">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/univibe-network" class="footer-menu">LinkedIn</a></li>
+                    <li><a href="mailto:info@univibenetwork.in"  class="footer-menu">Mail Us</a></li>
                 </ul>
             </div>
             <div class="col-md-6 col-xs-12">
                 <div class="footer-right">
                     <img src="img/logo/univibe_vertical_grayscale.png" class="footer-img">
                     <div class="mobile-icons">
-                        <a href="" class="fa fa-facebook icon"></a>
-                        <a href="" class="fa fa-linkedin icon"></a>
-                        <a href="" class="fa fa-envelope icon"></a>
+                        <a href="https://www.facebook.com/univibenetworks/?fref=ts" class="fa fa-facebook icon"></a>
+                        <a href="https://www.linkedin.com/company/univibe-network" class="fa fa-linkedin icon"></a>
+                        <a href="mailto:info@univibenetwork.in" class="fa fa-envelope icon"></a>
                     </div>
-                    <p class="copyright">Copyright &copy 2016, Univibe Network Pvt. Ltd.</p>
+                    <p class="copyright">Copyright &copy; 2016, Univibe Network Pvt. Ltd.</p>
                 </div>
             </div>
         </div>
     </footer>
     <!-- footer ends here     .... -->
     <!-- modal starts here -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -210,26 +216,22 @@
                     <h4 class="modal-title text-center" id="myModalLabel">Get In Touch</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form method="post" action="content.php">
                         <div class="form-group">
-                            <input type="name" class="form-control form-elements" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Name" name="name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control form-elements" id="exampleInputEmail1" placeholder="Email Address">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" name="email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control form-elements" placeholder="Organization">
+                            <input type="text" class="form-control" placeholder="Organization" name="college">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control form-elements" placeholder="10 Digit Phone">
+                            <input type="tel" class="form-control" placeholder="10 Digit Phone" name="number">
                         </div>
-                        <button type="submit" class="theme-btn full-width-btn">Submit</button>
+                        <button type="submit" class="theme-btn dark btn-block" name="send">Submit</button>
                     </form>
                 </div>
-                <!--<div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>-->
             </div>
         </div>
     </div>

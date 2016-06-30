@@ -24,7 +24,7 @@ h1.white {
  *
  */
 
-h1 {
+h1,h5 {
     font-weight: 700;
 }
 
@@ -34,7 +34,6 @@ p.lead {
 
 h2,
 h4,
-h5,
 h6 {
     font-weight: 400;
 }
@@ -56,7 +55,18 @@ input[type="email"],
 input[type="tel"],
 input[type="number"],
 textarea {
+	box-shadow: none;
     border-radius: 2px;
+    padding:10px;
+    border:none;
+    border-bottom:1px solid rgba(0,0,0,0.3);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"]{
+	border-bottom-color: rgba(0,0,0,0.75);
 }
 
 a,
@@ -119,10 +129,9 @@ a:hover {
     color: #fff;
 }
 
-.footer-heading {
-    font-size: 18px;
-    font-weight: bold;
-    color: rgba(17, 17, 17, 1);
+.theme-btn.dark{
+	color:#000;
+	border-color: #000;
 }
 
 .footer-menu {
@@ -181,9 +190,6 @@ a:hover {
 }
 
 .form-elements {
-    border-left: none;
-    border-top: none;
-    border-right: none;
     border-bottom: 2px dotted #d9d9d9;
     text-decoration: none;
     outline: 0;
@@ -197,7 +203,6 @@ a:hover {
 
 .form-control:focus {
     box-shadow: none;
-    border-bottom-color: #4d0063;
 }
 
 .pt9 {
@@ -274,10 +279,6 @@ a:hover {
     .jumbotron {
         padding-top: 0px;
         padding-bottom: 48px;
-    }
-    .modal-dialog {
-        width: 500px;
-        margin: 100px auto;
     }
     .home-icon {
         width: 64px;
@@ -475,15 +476,15 @@ a:hover {
         border-bottom-color: #452e8e;
     }
     .side-collapse {
-        top: 60px;
+        top:0px;
         bottom: 0;
         left: 0;
-        width: 200px;
+        width: 200px !important;
         position: fixed;
         overflow: hidden;
         transition: width .4s;
         z-index: 10000;
-        background-color: #fff;
+        background-color: #fff !important;
         text-align: left;
     }
     .side-collapse.in {
@@ -508,9 +509,7 @@ a:hover {
     .footer-img {
         float: none;
     }
-    .footer-submenu {
-        display: none;
-    }
+   
     .footer-heading {
         font-size: 16px;
     }
@@ -529,6 +528,15 @@ a:hover {
         width: 64px;
         height: 64px;
     }
+    .navbar-collapse{
+	background-color: #ffffff;
+}
+.logo{
+	margin-left: -60px;
+	left: 50%;
+	position: absolute;
+}
+
 }
 
 .contactus {
@@ -580,3 +588,4 @@ a:hover {
 .fa-envelope {
     color: #dd4b39;
 }
+
