@@ -86,7 +86,8 @@ module.exports = function(grunt) {
                     { src: ['bower_components/bootstrap/fonts/**'], dest: 'dist/', filter: 'isFile', expand: true },
                     { src: ['img/*'], dest: 'dist/', filter: 'isFile', expand: true },
                     { src: ['img/**/*'], dest: 'dist/', filter: 'isFile', expand: true },
-                    { src: ['*.html'], dest: 'dist/', filter: 'isFile', expand: true }
+                    { src: ['*.html'], dest: 'dist/', filter: 'isFile', expand: true },
+                    { src: ['*.php'], dest: 'dist/', filter: 'isFile', expand: true }
                 ]
             }
         },
