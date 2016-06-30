@@ -173,7 +173,7 @@ module.exports = function(grunt) {
                     //'app/dist/application/views/index.php': ['app/src/application/views/index.php'],
                     'dist/index.html': ['index.html'],
                     'dist/services.html': ['services.html'],
-                    'dist/team.html': ['team.html'],
+                    'dist/about.html': ['about.html'],
                 }
             }
         }
