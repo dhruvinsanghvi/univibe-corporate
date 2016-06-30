@@ -1,5 +1,9 @@
 # Changelog
 
+### Thursday, 30 June 2016
+Following changes done by [Dhruvin] (https://github.com/dhruvinsanghvi)
+- Google Analytics link added in html pages
+
 ### v 0.9.0 (Pre release) Wednesday, 29 June 2016
 - Site readied for deployment by [Abbas](https://github.com/abbasdawood), included fixing build scripts and relevant sections in pages
 - Bumped version to 0.9.0 (pre-release)
