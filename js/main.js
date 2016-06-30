@@ -17,7 +17,7 @@ $(window).scroll(function(a, b) {
         $('.navbar-custom').css('background-color', 'transparent');
         $('.navbar-custom .navbar-nav > li > a').css('color', '#ffffff');
         $('.nav-tabs').removeClass('navbar-fixed-top');
-        $('.theme-btn').css('color', '#ffffff');
+        $('.theme-btn').css({ 'color': '#ffffff', 'border': '1px solid #ffffff', 'border-radius': '4px' });
 
     }
 });
@@ -51,6 +51,7 @@ $(document).ready(function() {
     var sel = sideslider.attr('data-target');
     sideslider.click(function(event) {
         $(sel).toggleClass('in');
+        $(sel).toggleClass('overlay');
 
     });
     var offset = 130;
