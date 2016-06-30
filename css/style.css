@@ -317,6 +317,7 @@ a:hover {
     background-image: url(../img/pattern.png);
     background-repeat: repeat;
     background-position: center center;
+    overflow: hidden;
 }
 
 .bgservices {
