@@ -4,9 +4,9 @@ if(isset($_POST['send']))
 
 	        $userName=$_POST['name'];
 			$subject = "Message from ".$userName; 
-			$contact = $_POST['contact'];
+			$contact = $_POST['number'];
             $college = $_POST['college'];
-			$message ="Contact Number :- ".$contact."<br/> Organisation :- ".$college ;
+			$message ="Name:- ".$userName." <br/>Email:- ".$_POST['email']."<br/> Contact Number :- ".$contact."<br/> Organisation :- ".$college ;
 			$to='info@univibenetwork.in';
 			$headers = "From: " . strip_tags($_POST['email']) . "\r\n";
 			$headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
