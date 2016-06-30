@@ -87,7 +87,7 @@
         <div class="row feature">
             <div class="col-md-5 col-xs-12">
                 <h2 class="text-left">Some Awesome Colleges work with us</h2>
-                <p class="lead">Sense child do state to defer mr of forty. Become latter but nor abroad wisdom waited. Was delivered gentleman acuteness but daughters. In as of whole as match asked. Pleasure exertion put add entrance distance drawings.</p>
+                <p class="lead">A lot of colleges trust us with building their alumni network and we look forward to serve many more</p>
             </div>
             <div class="col-md-6 col-md-offset-1 col-xs-12 text-left">
                 <div class="row">
@@ -148,7 +148,7 @@
             </div>
         </div>
     </footer>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -156,26 +156,22 @@
                     <h4 class="modal-title text-center" id="myModalLabel">Get In Touch</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form method="post" action="content.php">
                         <div class="form-group">
-                            <input type="name" class="form-control form-elements" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Name" name="name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control form-elements" id="exampleInputEmail1" placeholder="Email Address">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" name="email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control form-elements" placeholder="Organization">
+                            <input type="text" class="form-control" placeholder="Organization" name="college">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control form-elements" placeholder="10 Digit Phone">
+                            <input type="tel" class="form-control" placeholder="10 Digit Phone" name="number">
                         </div>
-                        <button type="submit" class="theme-btn full-width-btn">Submit</button>
+                        <button type="submit" class="theme-btn dark btn-block" name="send">Submit</button>
                     </form>
                 </div>
-                <!--<div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>-->
             </div>
         </div>
     </div>

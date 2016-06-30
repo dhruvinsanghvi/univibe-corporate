@@ -238,7 +238,7 @@
             </div>
         </div>
     </footer>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -246,20 +246,20 @@
                     <h4 class="modal-title text-center" id="myModalLabel">Get In Touch</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form method="post" action="content.php">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Name" name="name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" name="email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Organization">
+                            <input type="text" class="form-control" placeholder="Organization" name="college">
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="10 Digit Phone">
+                            <input type="tel" class="form-control" placeholder="10 Digit Phone" name="number">
                         </div>
-                        <button type="submit" class="theme-btn dark btn-block">Submit</button>
+                        <button type="submit" class="theme-btn dark btn-block" name="send">Submit</button>
                     </form>
                 </div>
             </div>

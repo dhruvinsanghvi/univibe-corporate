@@ -54,8 +54,8 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2 col-md-8 col-lg-8">
-                    <h1 class="white">Meaningful Alumni Networking</h1>
-                    <p class="lead white">Some meaningful subtitle that is just about this long</p>
+                    <h1 class="white">For Alumni. By Alumni</h1>
+                  
                 </div>
             </div>
         </div>
@@ -80,8 +80,8 @@
                 </div>
                 
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <p class="lead">Univibe network started off with this simple conversation to connect alumni and relive our college memories. As alums of a management institute in Mumbai, we understand leveraging the value of your alumni network can be one of the biggest challenges an institution faces.<br>
-                    We make it easy for schools to have their own branded web and mobile platform that not only keeps your alumni engaged and connected, and offers professional and personal growth.<br>
+                    <p>Univibe network started off with this simple conversation to connect alumni and relive our college memories. As alums of a management institute in Mumbai, we understand leveraging the value of your alumni network can be one of the biggest challenges an institution faces.<br><br>
+                    We make it easy for schools to have their own branded web and mobile platform that not only keeps your alumni engaged and connected, and offers professional and personal growth.<br><br>
                     By helping you unlock the full networking potential of your alumni database, we aim to build goodwill towards your organization, improve your alumni relations, and help you achieve your advancement goals.</p>
                 </div>
             </div>
@@ -155,6 +155,7 @@
             <div class="row service">
                 <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
                     <h2 class="text-capitalize">Careers</h2>
+                    <hr>
                    
                     <p class="lead">We are hiring across Technology, Marketing and Content. Please email your resume to info[at]univibenetwork[dot]in</p>
                 </div>
@@ -207,7 +208,7 @@
     </footer>
     <!-- footer ends here     .... -->
     <!-- modal starts here -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -215,26 +216,22 @@
                     <h4 class="modal-title text-center" id="myModalLabel">Get In Touch</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form method="post" action="content.php">
                         <div class="form-group">
-                            <input type="name" class="form-control form-elements" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Name" name="name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control form-elements" id="exampleInputEmail1" placeholder="Email Address">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" name="email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control form-elements" placeholder="Organization">
+                            <input type="text" class="form-control" placeholder="Organization" name="college">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control form-elements" placeholder="10 Digit Phone">
+                            <input type="tel" class="form-control" placeholder="10 Digit Phone" name="number">
                         </div>
-                        <button type="submit" class="theme-btn full-width-btn">Submit</button>
+                        <button type="submit" class="theme-btn dark btn-block" name="send">Submit</button>
                     </form>
                 </div>
-                <!--<div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>-->
             </div>
         </div>
     </div>
