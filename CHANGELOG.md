@@ -1,5 +1,16 @@
 # Changelog
 
+### Monday, 4 July 2016
+Following changes done by [Dhruvin] (https://github.com/dhruvinsanghvi)
+- New Mobile Menu Integrated
+- Hover issue in team.html resolved
+- All css merged with naming conventions
+- Clients Logo aligned centrally
+- ALl links Working properly
+- Image min done in gruntfile.js
+- Footer with Address And Other Changes Integrated
+- Bumped Version to 1.1.0 (release)
+
 ### Thursday, 30 June 2016
 Following changes done by [Dhruvin] (https://github.com/dhruvinsanghvi)
 - Google Analytics link added in html pages

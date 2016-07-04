@@ -150,6 +150,18 @@ module.exports = function(grunt) {
                 }
             }
         },
+
+          imagemin: {                          // Task
+       
+          dynamic: {                         // Another target
+             files: [{
+             expand: true,                  // Enable dynamic expansion
+             cwd: 'img/',                   // Src matches are relative to this path
+             src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+             dest: 'dist/img'                  // Destination path prefix
+            }]
+           }
+       },
         removelogging: {
             dist: {
                 src: '<%= concat.main.dest %>',
@@ -180,9 +192,10 @@ module.exports = function(grunt) {
     });
 
     // Default task.
-    grunt.registerTask('default', ['jshint', 'dom_munger', 'connect:main', 'watch']);
-    grunt.registerTask('serve', ['jshint', 'dom_munger', 'connect:main', 'watch']);
-    grunt.registerTask('build', ['jshint', 'clean:before', 'dom_munger:read', 'cssmin:main', 'removelogging', 'uglify', 'copy', 'processhtml', 'clean:after']);
+
+    grunt.registerTask('default', ['jshint', 'dom_munger', 'connect:main', 'watch','imagemin']);
+    grunt.registerTask('serve', ['jshint', 'dom_munger', 'connect:main', 'watch','imagemin']);
+    grunt.registerTask('build', ['jshint', 'clean:before', 'dom_munger:read', 'cssmin:main', 'removelogging', 'uglify', 'copy', 'processhtml', 'clean:after','imagemin']);
 
 
     grunt.event.on('watch', function(action, filepath) {

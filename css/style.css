@@ -11,6 +11,9 @@ body {
 h1.white {
     color: #fff;
 }
+.black{
+    color: #000000;
+}
 
 
 /*=====================================
@@ -80,6 +83,11 @@ a:hover {
 
 /*=====  End of Common Styles  ======*/
 
+
+/*=====================================
+=            Logo Styles           =
+=====================================*/
+
 .logo {
     width: 180px;
     height: 60px;
@@ -91,6 +99,19 @@ a:hover {
 .logo.color {
     background-image: url('../img/logo/univibe_horizontal_color.png');
 }
+.logomobile{
+    width: 180px;
+    height: 60px;
+    background-size: contain;
+    background-image: url('../img/logo/univibe_horizontal_color.png');
+    background-repeat: no-repeat;
+
+}
+/*=====  End of Logo Styles  ======*/
+
+/*=====================================
+=     Navbar large screen Styles =
+=====================================*/
 
 .navbar-custom {
     border: none;
@@ -114,10 +135,27 @@ a:hover {
     font-size: 14px;
     font-weight: bold;
 }
+.navbar-default {
+    background-color: transparent;
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    border-radius: 0px;
+}
 
 .navbar-default .navbar-nav > li > a {
     color: #fff;
 }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ff9700;
+} 
+/*=====  End of Navbar Large Screen Styles  ======*/
+
+
+/*=====================================
+        =  Theme Button Styles =
+=====================================*/
 
 .theme-btn {
     font-size: 14px;
@@ -134,6 +172,21 @@ a:hover {
 	border-color: #000;
 }
 
+.full-width-btn {
+    width: 100%;
+}
+.btn-primary.outline {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+/*=====  End of Theme Button Styles  ======*/
+
+/*=====================================
+        =     Footer Styles =
+=====================================*/
 .footer-menu {
     font-size: 14px;
     font-weight: normal;
@@ -142,6 +195,47 @@ a:hover {
     text-decoration: none;
     line-height: 24px;
 }
+.footer-right {
+    float: right;
+    
+}
+
+.footer-img {
+    width: 96px;
+    float: right;
+    clear: both;
+}
+
+.copyright {
+    color: rgba(54, 54, 54, 1);
+    font-weight: light;
+    font-size: 14px;
+    line-height: 24px;
+    clear: both;
+}
+
+.icon {
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+}
+
+.mobile-icons {
+    display: none;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-linkedin {
+    color: #007bb5
+}
+
+.fa-envelope {
+    color: #dd4b39;
+}
+
+/*=====  End of Footer Styles  ======*/
 
 .globe-large {
     position: absolute;
@@ -166,28 +260,6 @@ a:hover {
     font-size: 16px !important;
 }
 
-.footer-right {
-    float: right;
-    margin-top: 19px;
-}
-
-.footer-img {
-    width: 96px;
-    float: right;
-    clear: both;
-}
-
-.copyright {
-    color: rgba(54, 54, 54, 1);
-    font-weight: light;
-    font-size: 14px;
-    line-height: 24px;
-    clear: both;
-}
-
-.full-width-btn {
-    width: 100%;
-}
 
 .form-elements {
     border-bottom: 2px dotted #d9d9d9;
@@ -205,9 +277,7 @@ a:hover {
     box-shadow: none;
 }
 
-.pt9 {
-    padding-top: 7px;
-}
+
 
 .hero-image {
     float: right;
@@ -217,8 +287,13 @@ a:hover {
     left: 30%;
 }
 
+
+/*=====================================
+  = Home Page Client Section Styles =
+=====================================*/
 .client-card {
     height: 200px;
+    margin-top: 15px;
 }
 
 .client {
@@ -231,6 +306,8 @@ a:hover {
     background-image: url(../img/clients/client@2x.jpg);
     background-repeat: no-repeat;
     background-size: 432px 144px;
+    margin: 0px auto;
+
 }
 
 .client:hover,
@@ -250,6 +327,10 @@ a:hover {
     background-position: -288px 0;
 }
 
+
+/*=====  End of Home Page Client Section  Styles  ======*/
+
+
 .row.feature {
     padding: 20px 0 80px;
 }
@@ -262,54 +343,8 @@ a:hover {
     margin-top: 40px;
 }
 
-.btn-primary.outline {
-    background: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 4px;
-}
 
-@media screen and (min-width:480px) {
-    .hero-image {
-        left: 0%;
-    }
-}
 
-@media screen and (min-width: 768px) {
-    .jumbotron {
-        padding-top: 0px;
-        padding-bottom: 48px;
-    }
-    .home-icon {
-        width: 64px;
-        height: 64px;
-    }
-    .hero-image {
-        margin-top: -400px;
-        height: 500px;
-        left: 45%;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .hero-image {
-        margin-top: -350px;
-        height: 600px;
-        left: 30%;
-    }
-    .client {
-        background-image: url(../img/clients/client@3x.jpg);
-        background-repeat: no-repeat;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .hero-image {
-        margin-top: -350px;
-        height: 600px;
-        left: 10%;
-    }
-}
 
 .jumbotron.bghome {
     padding-top: 120px;
@@ -326,21 +361,15 @@ a:hover {
     height: 60%;
 }
 
-.navbar-default {
-    background-color: transparent;
-    transition: all 0.5s;
-    width: 100%;
-    z-index: 1000;
-    height: 60px;
-    border-radius: 0px;
-}
 
 .scene {
     height: 100%;
 }
 
 
-/* tab css */
+/*=====================================
+  = Scrollspy Tab  Styles =
+=====================================*/
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -383,12 +412,15 @@ a:hover {
     border-left: none;
     border-right: none;
 }
+/*=====  End of Scrollspy Tabs Styles  ======*/
 
 .service-img{
     padding-top:20px;
     height: 150px;
 }
-
+/*=====================================
+  = About Page Team Section Styles =
+=====================================*/
 .team-img {
     height: 180px;
     position: relative;
@@ -432,7 +464,7 @@ a:hover {
     display: none;
 }
 
-
+/*=====  End of About Page Team Section Styles  ======*/
 .name {
     padding-top: 50px;
 }
@@ -469,7 +501,9 @@ a:hover {
     width: 128px;
     height: 128px;
 }
-
+/*=====================================
+  = Media Queries Styles =
+=====================================*/
 @media screen and (max-width: 768px) {
     .nav-tabs.nav-justified > .active > a,
     .nav-tabs.nav-justified > .active > a:hover,
@@ -530,15 +564,70 @@ a:hover {
         height: 64px;
     }
     .navbar-collapse{
-	background-color: #ffffff;
-}
-.logo{
-	margin-left: -60px;
-	left: 50%;
-	position: absolute;
-}
+	    background-color: #ffffff;
+    }
+    .logo{
+	   margin-left: -60px;
+	   left: 50%;
+	   position: absolute;
+    }
+    .clrbth{
+       float: none !important;
+        text-align: center;
+    }
+   .txtcntr{
+       text-align: center;
+    }
+
 
 }
+
+@media screen and (min-width:480px) {
+    .hero-image {
+        left: 0%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        padding-top: 0px;
+        padding-bottom: 48px;
+    }
+    .home-icon {
+        width: 64px;
+        height: 64px;
+    }
+    .hero-image {
+        margin-top: -400px;
+        height: 500px;
+        left: 45%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .hero-image {
+        margin-top: -350px;
+        height: 600px;
+        left: 30%;
+    }
+    .client {
+        background-image: url(../img/clients/client@3x.jpg);
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .hero-image {
+        margin-top: -350px;
+        height: 600px;
+        left: 10%;
+    }
+}
+
+
+
+
+/*=====  End of Media Queries Styles  ======*/
 
 .contactus {
     float: right;
@@ -550,7 +639,7 @@ a:hover {
 .contactmobile {
     float: right;
     color: #fff;
-    padding: 15px 0px 0px 20px;
+    padding: 18px 15px 0px 20px;
     list-style: none;
     display: none;
 }
@@ -569,24 +658,283 @@ a:hover {
     border-radius: 4px;
 }
 
-.icon {
-    padding: 5px 10px 5px 10px;
-    font-size: 18px;
+
+
+/*-------------------------------*/
+/*           Wrappers            */
+/*-------------------------------*/
+
+#wrapper {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.mobile-icons {
-    display: none;
+#wrapper.toggled { padding-left: 0px; }
+
+#wrapper.toggled #sidebar-wrapper { width: 220px; }
+
+
+
+#sidebar-wrapper {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  background: #ffffff;
+  height: 100%;
+  left: 220px;
+  margin-left: -220px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 0;
+  z-index: 1000;
+}
+#sidebar-wrapper::-webkit-scrollbar {
+ display: none;
 }
 
-.fa-facebook {
-    color: #3b5998;
+
+
+/*-------------------------------*/
+/*   Mobile Sidebar nav styles */
+/*-------------------------------*/
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
 }
 
-.fa-linkedin {
-    color: #007bb5
+.sidebar-nav li {
+  display: inline-block;
+  line-height: 20px;
+  position: relative;
+  width: 100%;
 }
 
-.fa-envelope {
-    color: #dd4b39;
+.sidebar-nav li:before {
+  -moz-transition: width 0.2s ease-in;
+  -ms-transition: width 0.2s ease-in;
+  -webkit-transition: width 0.2s ease-in;
+  background-color: #ffffff;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 3px;
+  z-index: -1;
 }
+
+.sidebar-nav li:first-child a {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sidebar-nav li:nth-child(2):before { background-color: #ff9700; }
+
+.sidebar-nav li:nth-child(3):before { background-color: #ff9700; }
+
+.sidebar-nav li:nth-child(4):before { background-color: #ff9700; }
+
+
+.sidebar-nav li:hover:before {
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 100%;
+}
+
+.sidebar-nav li a {
+  color: #19227d;
+  display: block;
+  padding: 10px 15px 10px 30px;
+  text-decoration: none;
+}
+
+.sidebar-nav li.open:hover before {
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 100%;
+}
+
+.sidebar-nav .dropdown-menu {
+  background-color: #222222;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  font-size: 20px;
+  height: 65px;
+  line-height: 44px;
+}
+
+/*-------------------------------*/
+/*       Hamburger-Cross         */
+/*-------------------------------*/
+
+.hamburger {
+  background: transparent;
+  border: none;
+  display: block;
+  height: 32px;
+  margin-left: 15px;
+  position: fixed;
+  top: 14px;
+  width: 32px;
+  z-index: 1005;
+}
+
+.hamburger:hover { outline: none; }
+
+.hamburger:focus { outline: none; }
+
+.hamburger:active { outline: none; }
+
+.hamburger.is-closed:before {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.35s ease-in-out;
+  color: #ffffff;
+  content: '';
+  display: block;
+  font-size: 14px;
+  line-height: 32px;
+  opacity: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.hamburger.is-closed:hover before {
+  -webkit-transform: translate3d(-100px, 0, 0);
+  -webkit-transition: all 0.35s ease-in-out;
+  display: block;
+  opacity: 1;
+}
+
+.hamburger.is-closed:hover .hamb-top {
+  -webkit-transition: all 0.35s ease-in-out;
+  top: 0;
+}
+
+.hamburger.is-closed:hover .hamb-bottom {
+  -webkit-transition: all 0.35s ease-in-out;
+  bottom: 0;
+}
+
+.hamburger.is-closed .hamb-top {
+  -webkit-transition: all 0.35s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 5px;
+}
+
+.hamburger.is-closed .hamb-middle {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: -2px;
+  top: 50%;
+}
+
+.hamburger.is-closed .hamb-bottom {
+  -webkit-transition: all 0.35s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 5px;
+}
+
+.hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom, .hamburger.is-open .hamb-top, .hamburger.is-open .hamb-middle, .hamburger.is-open .hamb-bottom {
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.hamburger.is-open .hamb-top {
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.73, 1, 0.28, 0.08);
+  background-color: #000000;
+  margin-top: -2px;
+  top: 57%;
+  left:156px;
+  width: 70%;
+}
+
+.hamburger.is-open .hamb-middle {
+  background-color: #ffffff;
+  display: none;
+}
+
+.hamburger.is-open .hamb-bottom {
+  -webkit-transform: rotate(-45deg);
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.73, 1, 0.28, 0.08);
+  background-color: #000000;
+  margin-top: -2px;
+  top: 57%;
+  left: 156px;
+  width: 70%;
+}
+
+.hamburger.is-open:before {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.35s ease-in-out;
+  color: #ffffff;
+  content: '';
+  display: block;
+  font-size: 14px;
+  line-height: 32px;
+  opacity: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.hamburger.is-open:hover before {
+  -webkit-transform: translate3d(-100px, 0, 0);
+  -webkit-transition: all 0.35s ease-in-out;
+  display: block;
+  opacity: 1;
+}
+
+/*-------------------------------*/
+/*          Dark Overlay         */
+/*-------------------------------*/
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
 
