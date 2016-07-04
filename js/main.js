@@ -9,6 +9,9 @@ $(window).scroll(function(a, b) {
         $('.navbar-custom .navbar-nav > li > a').css('color', '#000000');
         $('.theme-btn').css({ 'color': '#000000', 'border': '1px solid #000000', 'border-radius': '4px' });
         $('.nav-tabs').addClass('navbar-fixed-top');
+        $('.hamburger.is-closed .hamb-top').css('background-color','rgba(0,0,0,1)');
+        $('.hamburger.is-closed .hamb-middle').css('background-color','rgba(0,0,0,1)');
+        $('.hamburger.is-closed .hamb-bottom').css('background-color','rgba(0,0,0,1)');
 
 
     } else {
@@ -18,12 +21,43 @@ $(window).scroll(function(a, b) {
         $('.navbar-custom .navbar-nav > li > a').css('color', '#ffffff');
         $('.nav-tabs').removeClass('navbar-fixed-top');
         $('.theme-btn').css({ 'color': '#ffffff', 'border': '1px solid #ffffff', 'border-radius': '4px' });
+        $('.hamburger.is-closed .hamb-top').css('background-color','rgba(255,255,255,0.7)');
+        $('.hamburger.is-closed .hamb-middle').css('background-color','rgba(255,255,255,0.7)');
+        $('.hamburger.is-closed .hamb-bottom').css('background-color','rgba(255,255,255,0.7)');
 
     }
 });
 
 
 $(document).ready(function() {
+     var trigger = $('.hamburger'),
+     overlay = $('.overlay'),
+     isClosed = false;
+
+      function hamburger_cross() {
+
+      if (isClosed === true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+   
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  }); 
 
     var scene = document.getElementById('scene');
     if (scene) {
@@ -31,8 +65,9 @@ $(document).ready(function() {
     }
 
     $('.team-img').hover(function() {
+       
 
-        $(this).children().fadeToggle(500, "linear");
+        $(this).children().stop().fadeToggle(500, "linear");
 
     });
 
@@ -61,5 +96,7 @@ $(document).ready(function() {
         $($(this).attr('href'))[0].scrollIntoView();
         scrollBy(0, -offset);
     });
+
+    $('[data-toggle="tooltip"]').tooltip();
 
 });

@@ -26,31 +26,56 @@
 </head>
 
 <body>
+    <div id="wrapper">
+    <div class="overlay"></div>
     <!-- main content goes here -->
       <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                 <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
+                 <button type="button" class="hamburger is-closed animated fadeInLeft visible-xs" data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
+                <a class="navbar-brand" href="index.html">
                     <div class="logo"></div>
                 </a>
                 <li class="contactmobile"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
             </div>
             <li class="contactus"><a href="#" class="theme-btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse hidden-xs" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" class="menu-selected">Home</a></li>
                     <li><a href="services.html" class="menu">Services</a></li>
-                    <li><a href="#" class="menu">Univibe+</a></li>
+                    <li><a href="#" class="menu" data-toggle="tooltip" title="Coming Soon">Univibe+</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+     <!-- mobile Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top visible-xs" id="sidebar-wrapper" role="navigation">
+      <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
+   
+    <ul class="nav sidebar-nav">
+       <li class="sidebar-brand"> 
+            <a class="navbar-brand" href="#">
+                 <div class="logomobile"></div>
+            </a>
+        </li>
+
+       <li>
+             <a href="index.html" class="menu-selected">Home</a>
+       </li>
+       <li>
+             <a href="services.html" class="menu">Services</a>
+       </li>
+       <li>
+             <a href="#" class="menu">Univibe+</a>
+       </li>
+     
+    </ul>
+    
+  </nav>
+  <!-- mobile side bar ends here --> 
+
+
     <div class="jumbotron bghome">
         <div class="container-fluid">
             <div class="row">
@@ -91,17 +116,17 @@
             </div>
             <div class="col-md-6 col-md-offset-1 col-xs-12 text-left">
                 <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 client-card">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 client-card text-center">
                         <div class="client client-bvp"></div>
-                        <span>Bharti Vidyapeeth University, Pune</span>
+                        <h4>Bharati Vidyapeeth University College Of Engineering, Pune</h4>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 client-card">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 client-card text-center">
                         <div class="client client-tsec"></div>
-                        <span>TSEC, Mumbai</span>
+                        <h4>TSEC, Mumbai</h4>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 client-card">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 client-card text-center">
                         <div class="client client-vjti"></div>
-                        <span>VJTI, Mumbai</span>
+                        <h4>VJTI, Mumbai</h4>
                     </div>
                 </div>
             </div>
@@ -110,42 +135,69 @@
     <!-- main content ends here  -->
      <footer>
         <div class="container">
+          <div class="row">
             <hr>
-            <div class="col-md-2 col-xs-4">
-                <h5>At Univibe</h5>
+            <div class="col-md-2 col-xs-6 txtcntr">
+                <h5><a href="about.html" class="black">At Univibe</a></h5>
                 <ul class="list-unstyled hidden-xs">
-                    <li><a href="about.html" class="footer-menu">Our Story</a></li>
-                    <li><a href="about.html" class="footer-menu">Team</a></li>
-                    <li><a href="about.html" class="footer-menu">Careers</a></li>
+                    <li><a href="about.html#story" class="footer-menu">Our Story</a></li>
+                    <li><a href="about.html#team" class="footer-menu">Team</a></li>
+                    <li><a href="about.html#careers" class="footer-menu">Careers</a></li>
                     <!--<li><a href="#" class="footer-menu">Partners</a></li>-->
                 </ul>
             </div>
-            <div class="col-md-2 col-xs-4">
-               <h5>What We Do</h5>
+            <div class="col-md-2 col-xs-6 txtcntr">
+               <h5><a href="services.html" class="black">What We Do</a></h5>
                 <ul class="list-unstyled hidden-xs">
                     <li><a href="services.html" class="footer-menu">Services</a></li>
                     <!--<li><a href="#" class="footer-menu">Payments</a></li>-->
                 </ul>
             </div>
-            <div class="col-md-2 col-xs-4">
+            <div class="col-md-2 hidden-xs">
                 <h5>Connect</h5>
-                <ul class="list-unstyled hidden-xs">
+                <ul class="list-unstyled">
                     <li><a href="https://www.facebook.com/univibenetworks/?fref=ts"  class="footer-menu">Facebook</a></li>
                     <li><a href="https://www.linkedin.com/company/univibe-network" class="footer-menu">LinkedIn</a></li>
                     <li><a href="mailto:info@univibenetwork.in"  class="footer-menu">Mail Us</a></li>
                 </ul>
+
             </div>
-            <div class="col-md-6 col-xs-12">
+             <hr class="col-xs-12 visible-xs">
+                
+            <div class="col-md-4 col-xs-12">
+                    <address class="pull-right clrbth">
+                         <h5>Address</h5>
+                         902, Kamlacharan Society, Road Number 2<br>
+                         Jawahar Nagar , Near Jawahar Nagar Phatak<br>
+                         Goregaon (W), Mumbai 400062<br>
+                         <abbr title="Phone">P:</abbr>  +91 022-65656467
+                    </address>
+                    <hr class="visible-xs">   
+            </div>
+           
+
+
+            <div class="col-xs-12 visible-xs">
+
+                <div class="col-xs-4 text-center">
+                     <a href="https://www.facebook.com/univibenetworks/?fref=ts" class="fa fa-facebook icon"></a>
+                 </div>
+                 <div class="col-xs-4 text-center">
+                    <a href="https://www.linkedin.com/company/univibe-network" class="fa fa-linkedin icon"></a>
+                </div>
+                 <div class="col-xs-4 text-center">
+                        <a href="mailto:info@univibenetwork.in" class="fa fa-envelope icon"></a>
+                 </div>
+                 <hr class="visible-xs">
+                   
+            </div>
+            <div class="col-md-2 col-xs-12">
                 <div class="footer-right">
                     <img src="img/logo/univibe_vertical_grayscale.png" class="footer-img">
-                    <div class="mobile-icons">
-                        <a href="https://www.facebook.com/univibenetworks/?fref=ts" class="fa fa-facebook icon"></a>
-                        <a href="https://www.linkedin.com/company/univibe-network" class="fa fa-linkedin icon"></a>
-                        <a href="mailto:info@univibenetwork.in" class="fa fa-envelope icon"></a>
-                    </div>
-                    <p class="copyright">Copyright &copy; 2016, Univibe Network Pvt. Ltd.</p>
+                    <p class="copyright pull-right clrbth">Univibe Network Pvt. Ltd.</p>
                 </div>
             </div>
+          </div>
         </div>
     </footer>
      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -175,6 +227,7 @@
             </div>
         </div>
     </div>
+</div>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
