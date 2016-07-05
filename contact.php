@@ -3,7 +3,7 @@ if(isset($_POST['send']))
 {
 
 	                $userName=$_POST['name'];
-	                if($userName.trim()==''){
+	                if($userName==''){
 	                ?>
 	                <script>
 	                alert("name can't be empty");
