@@ -1,5 +1,15 @@
 # Changelog
 
+### Tuesday, 5 July 2016
+Following changes done by [Dhruvin] (https://github.com/dhruvinsanghvi)
+- contact form validations done blank entry does not pass
+- footer changes done
+- On clicking contact number it opens a dialler
+- know more button working now
+- team menu added in sidebar
+- Contact us modal form is now responsive
+
+
 ### Monday, 4 July 2016
 Following changes done by [Dhruvin] (https://github.com/dhruvinsanghvi)
 - New Mobile Menu Integrated

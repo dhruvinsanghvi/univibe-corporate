@@ -43,7 +43,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" class="menu-selected">Home</a></li>
                     <li><a href="services.html" class="menu">Services</a></li>
-                    <li><a href="#" class="menu">Univibe+</a></li>
+                    <li><a href="#" class="menu" data-toggle="tooltip" title="Coming Soon" data-placement="bottom">Univibe+</a></li>
                 </ul>
             </div>
         </div>
@@ -66,8 +66,11 @@
        <li>
              <a href="services.html" class="menu">Services</a>
        </li>
+        <li>
+             <a href="about.html" class="menu">Team</a>
+       </li>
        <li>
-             <a href="#" class="menu">Univibe+</a>
+             <a href="#" class="menu" data-toggle="tooltip" title="Coming Soon" data-placement="bottom" >Univibe+</a>
        </li>
      
     </ul>
@@ -190,7 +193,7 @@
     </div>
     <!-- main content ends here  -->
     <!-- footer starts here -->
-     <footer>
+      <footer>
         <div class="container">
           <div class="row">
             <hr>
@@ -210,6 +213,7 @@
                     <!--<li><a href="#" class="footer-menu">Payments</a></li>-->
                 </ul>
             </div>
+
             <div class="col-md-2 hidden-xs">
                 <h5>Connect</h5>
                 <ul class="list-unstyled">
@@ -219,22 +223,31 @@
                 </ul>
 
             </div>
-             <hr class="col-xs-12 visible-xs">
+
+          
                 
             <div class="col-md-4 col-xs-12">
-                    <address class="pull-right clrbth">
+                    <hr class="visible-xs">
+                    <div class="col-xs-10 col-md-12">
+                    <address class="pull-right clrbth txtlft">
                          <h5>Address</h5>
                          902, Kamlacharan Society, Road Number 2<br>
                          Jawahar Nagar , Near Jawahar Nagar Phatak<br>
                          Goregaon (W), Mumbai 400062<br>
-                         <abbr title="Phone">P:</abbr>  +91 022-65656467
+                         <a href="tel:+9102265656467" class="black"><span class="fa fa-phone"></span> +91 022-65656467</a>
                     </address>
-                    <hr class="visible-xs">   
+                    </div>
+                    <div class="col-xs-2 text-center visible-xs">
+                        <a href="https://www.google.co.in/maps/place/Univibe+Network/@19.1590155,72.847052,17z/data=!4m13!1m7!3m6!1s0x3be7b64cf1f42c0f:0x41dd85b83f6fc11c!2sKamlacharan,+Jawahar+Nagar,+Goregaon+West,+Mumbai,+Maharashtra+400047!3b1!8m2!3d19.1589383!4d72.8492863!3m4!1s0x0:0x935198ac768952e5!8m2!3d19.1591488!4d72.8491777?hl=en" class="fa fa-map-marker"></a>
+                    </div>
+                     
             </div>
+            
            
 
 
             <div class="col-xs-12 visible-xs">
+                <hr class="visible-xs">  
 
                 <div class="col-xs-4 text-center">
                      <a href="https://www.facebook.com/univibenetworks/?fref=ts" class="fa fa-facebook icon"></a>
@@ -245,17 +258,20 @@
                  <div class="col-xs-4 text-center">
                         <a href="mailto:info@univibenetwork.in" class="fa fa-envelope icon"></a>
                  </div>
-                 <hr class="visible-xs">
+                
                    
             </div>
             <div class="col-md-2 col-xs-12">
+                 <hr class="visible-xs">
                 <div class="footer-right">
                     <img src="img/logo/univibe_vertical_grayscale.png" class="footer-img">
-                    <p class="copyright pull-right clrbth">Univibe Network Pvt. Ltd.</p>
+                    <p class="copyright pull-right clrbth txtcntr">Univibe Network Pvt. Ltd.</p>
                 </div>
             </div>
           </div>
+          
         </div>
+
     </footer>
     <!-- footer ends here     .... -->
     <!-- modal starts here -->
@@ -267,20 +283,20 @@
                     <h4 class="modal-title text-center" id="myModalLabel">Get In Touch</h4>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="contact.php">
+                    <form method="post" action="contact.php" onsubmit="return validateForm()" name="contactusForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name" name="name">
+                            <input type="text" class="form-control" placeholder="Name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" name="email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" name="email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Organization" name="college">
+                            <input type="text" class="form-control" placeholder="Organization" name="college" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="10 Digit Phone" name="number">
+                            <input type="text" class="form-control" placeholder="10 Digit Phone" name="number" required>
                         </div>
-                        <button type="submit" class="theme-btn dark btn-block" name="send">Submit</button>
+                        <button type="submit" class="theme-dark btn-block" name="send">Submit</button>
                     </form>
                 </div>
             </div>
