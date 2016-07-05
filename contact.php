@@ -2,11 +2,20 @@
 if(isset($_POST['send']))
 {
 
-	        $userName=$_POST['name'];
+	                $userName=$_POST['name'];
+	                if($userName.trim()==''){
+	                ?>
+	                <script>
+	                alert("name can't be empty");
+	                </script>
+	                <?php
+	                return false;
+	                
+	                }
 			$subject = "Message from ".$userName; 
 			$contact = $_POST['number'];
-            $college = $_POST['college'];
-			$message ="Name:- ".$userName." <br/>Email:- ".$_POST['email']."<br/> Contact Number :- ".$contact."<br/> Organisation :- ".$college ;
+                        $college = $_POST['college'];
+			$message ="Name:- ".$userName." <br/>Email:- ".$_POST['email']."<br/> Organisation :- ".$college."<br/> Contact Number :- ".$contact ;
 			$to='info@univibenetwork.in';
 			$headers = "From: " . strip_tags($_POST['email']) . "\r\n";
 			$headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
