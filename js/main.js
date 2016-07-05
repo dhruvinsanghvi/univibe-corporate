@@ -100,3 +100,15 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 
 });
+function validateForm(){
+      var x = document.forms["contactusForm"]["number"].value;
+      console.log(x);
+       var numb = /^[0-9]+$/;
+         if(x.match(numb) && x.length == 11){
+           return true;
+         }
+         else{
+            alert("please Enter Valid Phone Nummber");
+            return false;
+         }
+}
