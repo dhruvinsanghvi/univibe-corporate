@@ -68,7 +68,7 @@ module.exports = function(grunt) {
                 options: {
                     jshintrc: '.jshintrc'
                 },
-                src: [createFolderGlobs('*.js'),'!js/parallax.js']
+                src: [createFolderGlobs('*.js'), '!js/parallax.js']
             }
         },
         clean: {
@@ -100,18 +100,19 @@ module.exports = function(grunt) {
                     ]
                 },
                 src: 'index.html'
-            }/*,
-            update: {
-                options: {
-                    remove: ['script[data-remove!="false"]', 'link[data-remove!="false"]'],
-                    append: [
-                        { selector: 'body', html: '<script src="app.full.min.js"></script>' },
-                        { selector: 'head', html: '<link rel="stylesheet" href="app.full.min.css">' }
-                    ]
-                },
-                src: '*.html',
-                dest: 'dist/*.html'
-            }*/
+            }
+            /*,
+                        update: {
+                            options: {
+                                remove: ['script[data-remove!="false"]', 'link[data-remove!="false"]'],
+                                append: [
+                                    { selector: 'body', html: '<script src="app.full.min.js"></script>' },
+                                    { selector: 'head', html: '<link rel="stylesheet" href="app.full.min.css">' }
+                                ]
+                            },
+                            src: '*.html',
+                            dest: 'dist/*.html'
+                        }*/
         },
         cssmin: {
             main: {
@@ -151,17 +152,17 @@ module.exports = function(grunt) {
             }
         },
 
-          imagemin: {                          // Task
-       
-          dynamic: {                         // Another target
-             files: [{
-             expand: true,                  // Enable dynamic expansion
-             cwd: 'img/',                   // Src matches are relative to this path
-             src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-             dest: 'dist/img'                  // Destination path prefix
-            }]
-           }
-       },
+        imagemin: { // Task
+
+            dynamic: { // Another target
+                files: [{
+                    expand: true, // Enable dynamic expansion
+                    cwd: 'img/', // Src matches are relative to this path
+                    src: ['**/*.{png,jpg,gif}'], // Actual patterns to match
+                    dest: 'dist/img' // Destination path prefix
+                }]
+            }
+        },
         removelogging: {
             dist: {
                 src: '<%= concat.main.dest %>',
@@ -188,15 +189,28 @@ module.exports = function(grunt) {
                     'dist/about.html': ['about.html'],
                 }
             }
+        },
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: '207.174.212.53',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'dist',
+                dest: '/public_html/',
+                forceVerbose: true
+                //exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'path/to/dist/tmp']
+            }
         }
     });
 
     // Default task.
 
-    grunt.registerTask('default', ['jshint', 'dom_munger', 'connect:main', 'watch','imagemin']);
-    grunt.registerTask('serve', ['jshint', 'dom_munger', 'connect:main', 'watch','imagemin']);
-    grunt.registerTask('build', ['jshint', 'clean:before', 'dom_munger:read', 'cssmin:main', 'removelogging', 'uglify', 'copy', 'processhtml', 'clean:after','imagemin']);
-
+    grunt.registerTask('default', ['jshint', 'dom_munger', 'connect:main', 'watch', 'imagemin']);
+    grunt.registerTask('serve', ['jshint', 'dom_munger', 'connect:main', 'watch', 'imagemin']);
+    grunt.registerTask('build', ['jshint', 'clean:before', 'dom_munger:read', 'cssmin:main', 'removelogging', 'uglify', 'copy', 'processhtml', 'clean:after', 'imagemin']);
+    grunt.registerTask('deploy',['ftp-deploy']);
 
     grunt.event.on('watch', function(action, filepath) {
         //https://github.com/gruntjs/grunt-contrib-watch/issues/156

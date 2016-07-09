@@ -13,6 +13,18 @@ This project uses the connect server to watch and reload changes, you can initia
 ## Building the project
 This project uses grunt for build automation, so you can build the project simply by typing `grunt build`. This build script watches only the following files during build compile, necessary changes need to be done in all HTML, JS, CSS & the Gruntfile.js when new code is added
 
+## Deploying the project
+Make a file called .ftppass in the project root, and include the password with username in the following format
+````
+{
+  "key1": {
+    "username": "your username",
+    "password": "your password"
+  }
+}
+````
+Once done, run `grunt deploy` from the terminal to deploy, deploy should be run on successful build only
+
 ## Changes
 All pull requests and changes in each PR to be documented in [CHANGELOG.md](CHANGELOG.md)
 

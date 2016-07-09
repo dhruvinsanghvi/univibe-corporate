@@ -1,5 +1,12 @@
 # Changelog
 
+### Saturday, 9 July 2016
+Changes done by [Abbas] (https://github.com/abbasdawood)
+- Made changes in package / bower.json to include correct version
+- Added grunt task to deploy
+- Image related changes for new client (IITD)
+- Made relevant changes to [README.md] (README.md)
+
 ### Tuesday, 5 July 2016
 Following changes done by [Dhruvin] (https://github.com/dhruvinsanghvi)
 - contact form validations done blank entry does not pass
